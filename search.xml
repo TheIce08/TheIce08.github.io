@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>生日快乐哟(＾Ｕ＾)ノ</title>
+    <url>/posts/63207.html</url>
+    <content><![CDATA[
+
+
+
+
+
+
+## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
+## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
+## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
+## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
+****  
+版权 Ice_exe  
+
+
+
+]]></content>
+      <categories>
+        <category>学校</category>
+      </categories>
+      <tags>
+        <tag>birthday</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何添加CSS/JS？</title>
+    <url>/posts/%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%86%85%E5%AE%B9.html</url>
+    <content><![CDATA[
+前言魔改的基础是CSS&#x2F;JS，新人请仔细阅读
+ 
+因为写了几篇关于hexo博客的文章，基本都涉及到自定义css和js。然后就有很多人问怎么用，在哪添加等等等等。一看就是没好好读文档！官方文档链接放下面了，晚会去看，先看我的，我说的详细。Butterfly主题官方文档：https://butterfly.js.org/  
+超前总结很多人迷茫无外乎不知道在哪创建，创建了不知道在哪引入。文件夹创建位置：source目录下面，也就是和_post目录同级在哪引入：如果是全站css/js的话，可以在主题配置文件里的inject下的 head 和 bottom 里引入，如果是某一页的，可以在该页里面直接引入。  
+详细教程创建文件夹我们找到source文件夹在里面创建js和css文件夹，如果你有其他需求，也可以在这里创建文件夹，例如存放图片的img文件夹，存放字体的font文件夹等等。不要直接在主题目录下面创建文件夹，虽然这样也可以，但是主题更新没做转移的话就GG了   
+引入文件一般来说，我们都是在主题配置文件（_config.butterfly.yml）里面的inject引入。css文件在head引入，js文件在bottom里引入，有的js要求在head引入，不然无法生效。例如引入css里面的style.css和js文件夹里面的script.js文件夹，可以这样写:
+inject:  head:    # 自定义css    - &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css?v1&quot;&gt;    # 静态文件后面加个  ?任意内容  可以在每次更新之后用户自动重新请求.    # 例如添加 ?1 ,在修改此文件后改成 ?2 ,用户访问你的网站时,不会使用本地的缓存,而是请求新的内容。没修改的话就不用动。  bottom:    # 自定义js    - &lt;script src=&quot;/js/script.js?v1&quot;&gt;&lt;/script&gt;    # 引入多个文件就直接往下复制一行改一下文件名即可，如下：    - &lt;script src=&quot;/js/script1.js?v1&quot;&gt;&lt;/script&gt;    - &lt;script src=&quot;/js/script2.js?v1&quot;&gt;&lt;/script&gt;
+
+
+注意：路径要添加 /xxx，不能添加 ./xxx。如果有其他问题请评论区留言
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Butterfly🦋</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>纳尼😨学生持刀伤人</title>
+    <url>/posts/26302.html</url>
+    <content><![CDATA[本期内容为保护隐私已打码 
+  
+正文[#校方回应网传常熟某中学女生持刀伤人#:公安部门“正在调查”]    4月6日上午，有网友发帖称，江苏苏州常熟市某中学一名初三学生持刀伤害他人。当天上午10时,知情者透露，:“为常熟市实验中学崇文校区，“事发在今天早晨，女生好像拿了把匕首，被伤害男生疑似去世，具体为何发生矛盾尚不清楚。”具体情况还不是很清楚，目前公安人员正在了解具体情况，还在调查中。联系该学校所属的常熟市公安局虹桥派出所，接线人员称不清楚事件经过。
+图集网友热议
+疑似持刀女生
+疑似刀具
+在此奉劝各位朋友 生命只有一次，保护自己，关爱他人！
+]]></content>
+      <categories>
+        <category>校园</category>
+      </categories>
+      <tags>
+        <tag>新闻</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>butterfly右键菜单修改方案</title>
+    <url>/posts/48396.html</url>
+    <content><![CDATA[ 点击查看参考内容 
+              
+                  引用站外地址                                原帖             Ariasakaの小窝                        
+              
+            
+本教程需要一定魔改基础如何添加CSS&#x2F;JS?
+
+该教程仅为博主目前使用的方法
+  
+前置教程
+    引用站外地址
+    
+        
+        
+            添加CSS/JS
+             本站索引
+        
+        
+    
+    
+
+先睹为快
+ctul+右键调出原版菜单
+
+
+修改正文下面放出魔改教程，使用我修改过的pug和js进行魔改，参照自dorakika的原版  
+PUG部分新建[blogRoot]\themes\butterfly\layout\includes\rightmenu.pug，编写以下内容：
+#rightMenu	.rightMenu-group.rightMenu-small		a.rightMenu-item(href=&quot;javascript:window.history.back();&quot;)			i.fa.fa-arrow-left		a.rightMenu-item(href=&quot;javascript:window.history.forward();&quot;)			i.fa.fa-arrow-right		a.rightMenu-item(href=&quot;javascript:window.location.reload();&quot;)			i.fa.fa-refresh		a.rightMenu-item(href=&quot;javascript:rmf.scrollToTop();&quot;)			i.fa.fa-arrow-up	.rightMenu-group.rightMenu-line.hide#menu-text		a.rightMenu-item(href=&quot;javascript:rmf.copySelect();&quot;)			i.fa.fa-copy			span=&#x27;复制&#x27;		a.rightMenu-item(href=&quot;javascript:window.open(\&quot;https://www.baidu.com/s?wd=\&quot;+window.getSelection().toString());window.location.reload();&quot;)			i.iconfont.icon-baidu			span=&#x27;百度搜索&#x27;	.rightMenu-group.rightMenu-line.hide#menu-too		a.rightMenu-item(href=&quot;javascript:window.open(window.getSelection().toString());window.location.reload();&quot;)			i.fa.fa-link			span=&#x27;转到链接&#x27;	.rightMenu-group.rightMenu-line.hide#menu-paste		a.rightMenu-item(href=&#x27;javascript:rmf.paste()&#x27;)			i.fa.fa-copy			span=&#x27;粘贴&#x27;	.rightMenu-group.rightMenu-line.hide#menu-post		a.rightMenu-item(href=&quot;#post-comment&quot;)			i.fas.fa-comment			span=&#x27;空降评论&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.copyWordsLink()&quot;)			i.fa.fa-link			span=&#x27;复制本文地址&#x27;	.rightMenu-group.rightMenu-line.hide#menu-to		a.rightMenu-item(href=&quot;javascript:rmf.openWithNewTab()&quot;)			i.fa.fa-window-restore			span=&#x27;新窗口打开&#x27;		a.rightMenu-item#menu-too(href=&quot;javascript:rmf.open()&quot;)			i.fa.fa-link			span=&#x27;转到链接&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.copyLink()&quot;)			i.fa.fa-copy			span=&#x27;复制链接&#x27;	.rightMenu-group.rightMenu-line.hide#menu-img		a.rightMenu-item(href=&quot;./#post-comment&quot;)			i.fa.fa-download			span=&#x27;保存图片&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.openWithNewTab()&quot;)			i.fa.fa-window-restore			span=&#x27;在新窗口打开&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.click()&quot;)			i.fa.fa-arrows-alt			span=&#x27;全屏显示&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.copyLink()&quot;)			i.fa.fa-copy			span=&#x27;复制图片链接&#x27;	.rightMenu-group.rightMenu-line		a.rightMenu-item(href=&quot;javascript:toRandomPost()&quot;)			i.fa.fa-paper-plane			span=&#x27;随便逛逛&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.switchDarkMode();&quot;)			i.fa.fa-moon			span=&#x27;昼夜切换&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.translate();&quot;)			i.iconfont.icon-fanti			span=&#x27;繁简转换&#x27;		if is_home()==false			a.rightMenu-item(href=&quot;javascript:rmf.switchReadMode();&quot;)				i.fa.fa-book				span=&#x27;阅读模式&#x27;		a.rightMenu-item(href=&quot;javascript:window.location.href=\&quot;/about/\&quot;;&quot;)			i.fa.fa-info-circle			span=&#x27;版权声明&#x27;
+如果你加了评论弹幕的话，改为：（删掉+号，仅用作标记）
+ #rightMenu	.rightMenu-group.rightMenu-small		...	.rightMenu-group.rightMenu-line.hide#menu-paste		a.rightMenu-item(href=&#x27;javascript:rmf.paste()&#x27;)			i.fa.fa-copy			span=&#x27;粘贴&#x27;	.rightMenu-group.rightMenu-line.hide#menu-post		...+		 a.rightMenu-item(href=&quot;javascript:switchCommentBarrage()&quot;)+ 		 	 i.fa.fa-bell-slash+ 			 span=&#x27;开/关评论弹幕&#x27;		a.rightMenu-item(href=&quot;javascript:rmf.copyWordsLink()&quot;)			i.fa.fa-link			span=&#x27;复制本文地址&#x27;	.rightMenu-group.rightMenu-line.hide#menu-to		...
+CSS部分新建[blogRoot]/themes/butterfly/source/css/rightmenu.css编辑以下内容：  
+/* rightMenu */#rightMenu&#123;	display: none;	position: fixed;	width: 160px;	height: fit-content;	top: 10%;	left: 10%;	background-color: var(--card-bg);	border: 1px solid var(--font-color);	border-radius: 8px;	z-index: 100;&#125;#rightMenu .rightMenu-group&#123;	padding: 7px 6px;&#125;#rightMenu .rightMenu-group:not(:nth-last-child(1))&#123;	border-bottom: 1px solid var(--font-color);&#125;#rightMenu .rightMenu-group.rightMenu-small&#123;	display: flex;	justify-content: space-between;&#125;#rightMenu .rightMenu-group .rightMenu-item&#123;	height: 30px;	line-height: 30px;	border-radius: 8px;	transition: 0.3s;	color: var(--font-color);&#125;#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item&#123;	display: flex;	height: 40px;	line-height: 40px;	padding: 0 4px;&#125;#rightMenu .rightMenu-group .rightMenu-item:hover&#123;	background-color: var(--text-bg-hover);&#125;#rightMenu .rightMenu-group .rightMenu-item i&#123;	display: inline-block;	text-align: center;	line-height: 30px;	width: 30px;	height: 30px;	padding: 0 5px;&#125;#rightMenu .rightMenu-group .rightMenu-item span&#123;	line-height: 30px;&#125;#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item *&#123;	height: 40px;	line-height: 40px;&#125;.rightMenu-group.hide&#123;	display: none;&#125;
+这是dorakika的原版css，你也可以试试我的版本，不保证完全可用：  
+/* rightMenu */[data-theme=&#x27;light&#x27;] #rightMenu&#123;	display: none;	position: fixed;	width: 160px;	height: fit-content;	top: 10%;	left: 10%;	background-color: var(--card-bg);	border: 1px solid rgb(210,210,210);;	border-radius: 8px;	z-index: 100;	box-shadow: 3px 3px 5px #88888894;	background-color: var(--lyx-white-acrylic1);	backdrop-filter: blur(30px);&#125;[data-theme=&#x27;dark&#x27;] #rightMenu&#123;	display: none;	position: fixed;	width: 160px;	height: fit-content;	top: 10%;	left: 10%;	background-color: var(--card-bg);	border: 1px solid rgb(210,210,210);;	border-radius: 8px;	z-index: 100;	box-shadow: 3px 3px 5px #88888894;	background-color: var(--lyx-black-acrylic1);	backdrop-filter: blur(30px);&#125;#rightMenu .rightMenu-group&#123;	padding: 7px 6px;&#125;#rightMenu .rightMenu-group:not(:nth-last-child(1))&#123;	border-bottom: 1px solid rgb(180,180,180);&#125;#rightMenu .rightMenu-group.rightMenu-small&#123;	display: flex;	justify-content: space-between;&#125;#rightMenu .rightMenu-group .rightMenu-item&#123;	height: 30px;	line-height: 30px;	border-radius: 8px;	transition: 0.3s;	color: var(--font-color);&#125;#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item&#123;	display: flex;	height: 40px;	line-height: 40px;	padding: 0 4px;&#125;#rightMenu .rightMenu-group .rightMenu-item:hover&#123;	background-color: var(--text-bg-hover);    box-shadow: 0px 0px 5px var(--lyx-border);&#125;#rightMenu .rightMenu-group .rightMenu-item i&#123;	display: inline-block;	text-align: center;	line-height: 30px;	width: 30px;	height: 30px;	padding: 0 5px;&#125;#rightMenu .rightMenu-group .rightMenu-item span&#123;	line-height: 30px;&#125;#rightMenu:hover&#123;	border: 1px solid var(--lyx-blue);    /* box-shadow:0 0 3px var(--lyx-blue)!important; */&#125;#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item *&#123;	height: 40px;	line-height: 40px;&#125;.rightMenu-group.hide&#123;	display: none;&#125;.rightMenu-item:hover&#123;    color:white!important;    background-color:var(--lyx-blue)!important;&#125;:root&#123;    --lyx-border:#c9c9c9;    --lyx-blue:#6cf;    --lyx-gray:#e2e2e2;    --lyx-theme:#6cf;    --lyx-green:#39c5bb;    --lyx-black-acrylic1: #0008;    --lyx-black-acrylic2: #000a;    --lyx-black-acrylic3:#00000099;    --lyx-black:black;    --lyx-white:white;    --lyx-white-acrylic1:#fffd;    --lyx-white-acrylic2:#fffa;    --lyx-blackgray:#797979;    --lyx-0:#0000;    --lyx-scrollbar: #acacacDD;&#125;
+然后在主题配置文件中引入：  
+inject:  head:  - &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/rightmenu.css&quot;&gt;  - ...  bottom:  - ...
+因为少部分图标使用iconfont，你需要自己添加，下载我的iconfont图标包，然后解压把里面的东西扔到 [blogRoot]/themes/butterfly/source/css里面即可  
+
+    引用站外地址
+    
+        
+        
+            图标包
+            123云盘
+        
+        
+    
+    
+然后在主题配置文件中引入：  
+inject:  head:  - &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/iconfont.css&quot;&gt;  - ...  bottom:  - ...
+JS部分创建[blogRoot]/themes/butterfly/source/js/rightmenu.js然后编写以下内容：  
+console.log(    &quot;Codes uses GPL Licence&quot;)function insertAtCursor(myField, myValue) &#123;    //IE 浏览器    if (document.selection) &#123;        myField.focus();        sel = document.selection.createRange();        sel.text = myValue;        sel.select();    &#125;    //FireFox、Chrome等    else if (myField.selectionStart || myField.selectionStart == &#x27;0&#x27;) &#123;        var startPos = myField.selectionStart;        var endPos = myField.selectionEnd;        // 保存滚动条        var restoreTop = myField.scrollTop;        myField.value = myField.value.substring(0, startPos) + myValue + myField.value.substring(endPos, myField.value.length);        if (restoreTop &gt; 0) &#123;            myField.scrollTop = restoreTop;        &#125;        myField.focus();        myField.selectionStart = startPos + myValue.length;        myField.selectionEnd = startPos + myValue.length;    &#125; else &#123;        myField.value += myValue;        myField.focus();    &#125;&#125;let rmf = &#123;&#125;;rmf.showRightMenu = function (isTrue, x = 0, y = 0) &#123;    let $rightMenu = $(&#x27;#rightMenu&#x27;);    $rightMenu.css(&#x27;top&#x27;, x + &#x27;px&#x27;).css(&#x27;left&#x27;, y + &#x27;px&#x27;);    if (isTrue) &#123;        $rightMenu.show();    &#125; else &#123;        $rightMenu.hide();    &#125;&#125;rmf.switchDarkMode = function () &#123;    const nowMode = document.documentElement.getAttribute(&#x27;data-theme&#x27;) === &#x27;dark&#x27; ? &#x27;dark&#x27; : &#x27;light&#x27;    if (nowMode === &#x27;light&#x27;) &#123;        activateDarkMode()        saveToLocal.set(&#x27;theme&#x27;, &#x27;dark&#x27;, 2)        GLOBAL_CONFIG.Snackbar !== undefined &amp;&amp; btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)    &#125; else &#123;        activateLightMode()        saveToLocal.set(&#x27;theme&#x27;, &#x27;light&#x27;, 2)        GLOBAL_CONFIG.Snackbar !== undefined &amp;&amp; btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)    &#125;    // handle some cases    typeof utterancesTheme === &#x27;function&#x27; &amp;&amp; utterancesTheme()    typeof FB === &#x27;object&#x27; &amp;&amp; window.loadFBComment()    window.DISQUS &amp;&amp; document.getElementById(&#x27;disqus_thread&#x27;).children.length &amp;&amp; setTimeout(() =&gt; window.disqusReset(), 200)&#125;;rmf.copyWordsLink = function () &#123;    let url = window.location.href    let txa = document.createElement(&quot;textarea&quot;);    txa.value = url;    document.body.appendChild(txa)    txa.select();    document.execCommand(&quot;Copy&quot;);    document.body.removeChild(txa);    Swal.fire(&quot;复制成功！&quot;);&#125;rmf.switchReadMode = function () &#123;    const $body = document.body    $body.classList.add(&#x27;read-mode&#x27;)    const newEle = document.createElement(&#x27;button&#x27;)    newEle.type = &#x27;button&#x27;    newEle.className = &#x27;fas fa-sign-out-alt exit-readmode&#x27;    $body.appendChild(newEle)    function clickFn() &#123;        $body.classList.remove(&#x27;read-mode&#x27;)        newEle.remove()        newEle.removeEventListener(&#x27;click&#x27;, clickFn)    &#125;    newEle.addEventListener(&#x27;click&#x27;, clickFn)&#125;//复制选中文字rmf.copySelect = function () &#123;    document.execCommand(&#x27;Copy&#x27;, false, null);    //这里可以写点东西提示一下 已复制&#125;//回到顶部rmf.scrollToTop = function () &#123;    btf.scrollToDest(0, 500);&#125;rmf.translate = function () &#123;    document.getElementById(&quot;translateLink&quot;).click();&#125;// 右键菜单事件document.onkeydown = function (event) &#123;    event = (event || window.event);    if (event.keyCode == 17) &#123;        console.log(&quot;你知道的太多了&quot;);        return;    &#125;&#125;function popupMenu() &#123;    //window.oncontextmenu=function()&#123;return false;&#125;    window.oncontextmenu = function (event) &#123;        if(event.ctrlKey)return true;        console.log(event.keyCode)        $(&#x27;.rightMenu-group.hide&#x27;).hide();        //如果有文字选中，则显示 文字选中相关的菜单项        if (document.getSelection().toString()) &#123;            $(&#x27;#menu-text&#x27;).show();        &#125;        if (document.getElementById(&#x27;post&#x27;)) &#123;            $(&#x27;#menu-post&#x27;).show();        &#125; else &#123;            if (document.getElementById(&#x27;page&#x27;)) &#123;                $(&#x27;#menu-post&#x27;).show();            &#125;        &#125;        var el = window.document.body;        el = event.target;        var a=/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;&#x27;\*\+,;=.]+$/        if (a.test(window.getSelection().toString()))&#123;            $(&#x27;#menu-too&#x27;).show()        &#125;        if (el.tagName == &#x27;A&#x27;) &#123;            $(&#x27;#menu-to&#x27;).show()            rmf.open = function () &#123;                location.href = el.href            &#125;            rmf.openWithNewTab = function () &#123;                window.open(el.href);            &#125;            rmf.copyLink = function () &#123;                let url = el.href                let txa = document.createElement(&quot;textarea&quot;);                txa.value = url;                document.body.appendChild(txa)                txa.select();                document.execCommand(&quot;Copy&quot;);                document.body.removeChild(txa);            &#125;        &#125;        if (el.tagName == &#x27;IMG&#x27;) &#123;            $(&#x27;#menu-img&#x27;).show()            rmf.openWithNewTab = function () &#123;                window.open(el.src);            &#125;            rmf.click = function () &#123;                el.click()            &#125;            rmf.copyLink = function () &#123;                let url = el.src                let txa = document.createElement(&quot;textarea&quot;);                txa.value = url;                document.body.appendChild(txa)                txa.select();                document.execCommand(&quot;Copy&quot;);                document.body.removeChild(txa);            &#125;        &#125; else if (el.tagName == &quot;TEXTAREA&quot; || el.tagName == &quot;INPUT&quot;) &#123;            $(&#x27;#menu-paste&#x27;).show();            rmf.paste = function () &#123;                navigator.permissions                    .query(&#123;                        name: &#x27;clipboard-read&#x27;                    &#125;)                    .then(result =&gt; &#123;                        if (result.state == &#x27;granted&#x27; || result.state == &#x27;prompt&#x27;) &#123;                            //读取剪贴板                            navigator.clipboard.readText().then(text =&gt; &#123;                                console.log(text)                                insertAtCursor(el, text)                            &#125;)                        &#125; else &#123;                            alert(&#x27;请允许读取剪贴板！&#x27;)                        &#125;                    &#125;)            &#125;        &#125;        let pageX = event.clientX + 10;        let pageY = event.clientY;        let rmWidth = $(&#x27;#rightMenu&#x27;).width();        let rmHeight = $(&#x27;#rightMenu&#x27;).height();        if (pageX + rmWidth &gt; window.innerWidth) &#123;            pageX -= rmWidth + 10;        &#125;        if (pageY + rmHeight &gt; window.innerHeight) &#123;            pageY -= pageY + rmHeight - window.innerHeight;        &#125;        rmf.showRightMenu(true, pageY, pageX);        return false;    &#125;;    window.addEventListener(&#x27;click&#x27;, function () &#123;        rmf.showRightMenu(false);    &#125;);&#125;if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) &#123;    popupMenu()&#125;const box = document.documentElementfunction addLongtabListener(target, callback) &#123;    let timer = 0 // 初始化timer    target.ontouchstart = () =&gt; &#123;        timer = 0 // 重置timer        timer = setTimeout(() =&gt; &#123;            callback();            timer = 0        &#125;, 380) // 超时器能成功执行，说明是长按    &#125;    target.ontouchmove = () =&gt; &#123;        clearTimeout(timer) // 如果来到这里，说明是滑动        timer = 0    &#125;    target.ontouchend = () =&gt; &#123; // 到这里如果timer有值，说明此触摸时间不足380ms，是点击        if (timer) &#123;            clearTimeout(timer)        &#125;    &#125;&#125;addLongtabListener(box, popupMenu)
+因为这个js依赖于jquery，所以还需要引入jquery，在主题配置文件中引入：  
+inject:  head:  - ...  bottom:  - ...  - &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js&quot;&gt;&lt;/script&gt;  - &lt;script type=&quot;text/javascript&quot; src=&quot;/js/rightmenu.js&quot;&gt;&lt;/script&gt;  - ...
+然后你就拥有了一个好看且功能丰富的右键菜单了！
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Butterfly🦋</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>butterfly导航栏修改方案</title>
+    <url>/posts/36435.html</url>
+    <content><![CDATA[
+ 点击查看参考内容 
+              
+                  引用站外地址                                原帖             Heo                            引用站外地址                                返回顶部 显示网页阅读进度             leonus                        
+              
+            
+注意 ⚠️ 该教程仅为博主目前使用的方法, 如需移植还需自行修改 js, 比如回到顶部需要调用的方法是在右键菜单中定义的方法,而没有这个方法的同学,可以自行修改nav.pug中的rmf.scrollToTop() 方法为btf.scrollToDest(0方法或您自己的方法, 部分 css 颜色代码您可能需要自行修改。有问题请在评论提出~~  
+
+添加自定义CSS添加自定义CSSnav_menu.css, 注意其中的颜色代码需自行替换。这里提供一份我的颜色代码。  
+#nav a:hover &#123;  background: var(--anzhiyu-main);  transition: 0.3s;&#125;#nav-totop:hover .totopbtn i &#123;  opacity: 1;&#125;#nav-totop #percent &#123;  font-size: 12px;  background: var(--anzhiyu-white);  color: var(--anzhiyu-main);  width: 25px;  height: 25px;  border-radius: 35px;  display: flex;  justify-content: center;  align-items: center;  transition: 0.3s;&#125;.nav-fixed #nav-totop #percent,.page #nav-totop #percent &#123;  background: var(--font-color);  color: var(--card-bg);  font-size: 13px;&#125;#nav-totop &#123;  width: 35px;&#125;#page-header:not(.is-top-bar) #percent &#123;  transition: 0.3s;&#125;#page-header:not(.is-top-bar) #nav-totop &#123;  width: 0;  opacity: 0;  transition: width 0.3s, opacity 0.2s;  margin-left: 0 !important;&#125;#nav-totop #percent &#123;  font-weight: 700;&#125;#nav-totop:hover #percent &#123;  opacity: 0;  transform: scale(1.5);  font-weight: 700;&#125;#page-header #nav #nav-right div &#123;  margin-left: 0.5rem;  padding: 0;&#125;#nav-totop &#123;  display: flex;  align-items: center;  justify-content: center;  transition: 0.3s;&#125;.nav-button &#123;  cursor: pointer;&#125;div#menus &#123;  display: flex;  align-items: center;&#125;#page-header #nav .nav-button a &#123;  height: 35px;  width: 35px;  display: flex;  align-items: center;  justify-content: center;&#125;#nav .site-page &#123;  padding-bottom: 0px;&#125;#nav *::after &#123;  background-color: transparent !important;&#125;/* 顶栏修改 */#nav .menus_items .menus_item .menus_item_child li a &#123;  padding: 2px 16px;&#125;#nav .menus_items .menus_item .menus_item_child li:hover a &#123;  color: white !important;&#125;#nav .menus_items .menus_item .menus_item_child li &#123;  margin: 6px;  border-radius: 5px;  transition: all 0.3s;  display: inline-block;  margin: 0 3px;&#125;#nav .menus_items .menus_item .menus_item_child:before &#123;  top: -19px;&#125;#site-name,.shuoshuo &#123;  white-space: nowrap;  overflow: hidden;&#125;#site-name &#123;  padding: 0 8px;  position: relative;  display: flex;  align-items: center;  justify-content: center;  transition: 0.3s;&#125;#blog_name #site-name i &#123;  opacity: 0;  position: absolute;&#125;#blog_name #site-name:hover .title &#123;  opacity: 0;&#125;#blog_name #site-name:hover i &#123;  opacity: 1;  transform: scale(1.01);  color: white;&#125;/* 圆角隐藏 */ul.menus_item_child &#123;  border-radius: 5px;&#125;/* 一级菜单居中 */#nav .menus_items &#123;  position: absolute;  width: fit-content;  left: 50%;  transform: translateX(-50%);  display: flex;  flex-direction: row;  justify-content: center;  align-items: center;  height: 60px;&#125;#nav .menus_items .menus_item:hover .menus_item_child &#123;  display: block;  transform: translateX(-50%);  right: auto;  left: auto !important;  padding: 6px 4px;  box-sizing: content-box;  line-height: 35px;&#125;#nav .menus_items .menus_item:hover &#123;  padding: 0 5px 27px 5px !important;  margin-bottom: -14.5px !important;&#125;#nav .menus_items .menus_item .menus_item_child &#123;  top: 44px;&#125;@media screen and (min-width: 768px) &#123;  .page .menus_item:hover &gt; a.site-page &#123;    color: var(--anzhiyu-white) !important;    background: var(--anzhiyu-main);    transition: 0.3s;    box-shadow: var(--anzhiyu-shadow-main);  &#125;&#125;.nav-fixed #nav &#123;  transform: translateY(58px) !important;&#125;#nav &#123;  padding: 0 calc((100% - 1420px) / 2);  backdrop-filter: saturate(180%) blur(20px);&#125;#nav a &#123;  border-radius: 8px;  color: var(--font-color);&#125;.page #nav a:hover &#123;  color: var(--anzhiyu-white) !important;  background: var(--anzhiyu-main);  transition: 0.3s;  box-shadow: var(--anzhiyu-shadow-main);&#125;#menus &gt; div.menus_items &gt; div &gt; a &#123;  letter-spacing: 0.3rem;  font-weight: 700;  padding: 0em 0.3em 0em 0.5em;  height: 35px;  line-height: 35px;&#125;#nav .menus_items .menus_item &#123;  padding: 0 5px;  display: flex;  flex-direction: column;  margin: auto;  align-items: center;&#125;#nav div#toggle-menu &#123;  padding: 2px 0 4px 6px;&#125;#nav-totop .totopbtn i &#123;  position: absolute;  display: flex;  opacity: 0;&#125;#page-name::before &#123;  font-size: 18px;  position: absolute;  width: 100%;  height: 100%;  border-radius: 8px;  color: white !important;  top: 0;  left: 0;  content: &quot;回到顶部&quot;;  background-color: var(--anzhiyu-theme);  transition: all 0.3s;  -webkit-transition: all 0.3s;  -moz-transition: all 0.3s;  -ms-transition: all 0.3s;  -o-transition: all 0.3s;  opacity: 0;  box-shadow: 0 0 3px var(--anzhiyu-theme);  line-height: 45px; /*如果垂直位置不居中可以微调此值，也可以删了*/&#125;#page-name:hover:before &#123;  opacity: 1;&#125;#name-container &#123;  transition: all 0.3s;  -webkit-transition: all 0.3s;  -moz-transition: all 0.3s;  -ms-transition: all 0.3s;  -o-transition: all 0.3s;&#125;#name-container:hover &#123;  transform: translateX(-50%) scale(1.03);&#125;#page-name &#123;  position: relative;  padding: 10px 30px;&#125;center#name-container &#123;  position: absolute;  width: 100%;  left: 50%;  transform: translateX(-50%);  font-family: &quot;ZhuZiAYuanJWD&quot;;&#125;.nav-fixed.nav-visible #name-container &#123;  top: 60px;  transition: 0.3s;&#125;.nav-fixed.nav-visible #menus .menus_items &#123;  bottom: -0px;  transition: 0.3s;  line-height: 60px;&#125;.nav-fixed #menus .menus_items &#123;  bottom: 60px;  transition: 0.3s;&#125;.nav-fixed #name-container &#123;  top: 15%;  transition: 0.3s;&#125;#name-container &#123;  bottom: 60px;&#125;.mask-name-container &#123;  max-width: 1200px;  width: 50%;  height: 100%;  position: absolute;  overflow: hidden;  left: 50%;  transform: translateX(-50%);&#125;@media screen and (max-width: 992px) &#123;  .mask-name-container &#123;    width: 65%;  &#125;&#125;@media screen and (max-width: 768px) &#123;  .mask-name-container &#123;    display: none;  &#125;&#125;#sidebar #sidebar-menus .menus_items .site-page:hover &#123;  color: var(--anzhiyu-white);  border-radius: var(--anzhiyu-border-radius);&#125;#nav .menus_items .menus_item &gt; a &gt; i:last-child &#123;  display: none;&#125;#nav #search-button &#123;  font-size: 1.3em;&#125;@media screen and (min-width: 900px) &#123;  #nav .back-home-button:hover &#123;    box-shadow: var(--anzhiyu-shadow-main);  &#125;&#125;.back-home-button:hover &#123;  background: var(--anzhiyu-main);  color: var(--anzhiyu-white) !important;&#125;.back-home-button &#123;  display: flex;  width: 35px;  height: 35px;  padding: 0 !important;  align-items: center;  justify-content: center;  margin-right: 4px;  transition: 0.3s;  border-radius: 8px;&#125;.back-home-button:hover .back-menu-list-groups &#123;  display: flex;  opacity: 1;  transition: 0.3s;  top: 55px;  pointer-events: auto;  left: 0;&#125;.back-home-button .back-menu-list-groups &#123;  position: absolute;  top: 65px;  left: 0;  background: var(--anzhiyu-card-bg);  border-radius: 12px;  border: var(--style-border);  flex-direction: column;  font-size: 12px;  color: var(--anzhiyu-secondtext);  box-shadow: var(--anzhiyu-shadow-border);  transition: 0s;  opacity: 0;  pointer-events: none;&#125;.back-home-button .back-menu-list-group &#123;  display: flex;  flex-direction: column;&#125;.back-home-button .back-menu-list-group .back-menu-list-title &#123;  margin: 8px 0 0 16px;  transition: 0.3s;&#125;.back-home-button .back-menu-list &#123;  display: flex;  flex-direction: column;&#125;.back-home-button .back-menu-list::before &#123;  position: absolute;  top: -22px;  left: 0px;  width: 100%;  height: 25px;  content: &quot;&quot;;&#125;.back-home-button .back-menu-list-group:hover .back-menu-list-title &#123;  color: var(--anzhiyu-main);&#125;.back-home-button .back-menu-list-groups:hover &#123;  border: var(--style-border-hover);&#125;.back-home-button .back-menu-list .back-menu-item &#123;  display: flex;  align-items: center;  margin: 4px 8px;  padding: 4px 8px !important;  transition: 0.3s;  border-radius: 8px;&#125;.back-home-button .back-menu-list .back-menu-item .back-menu-item-text &#123;  font-size: var(--global-font-size);  margin-left: 0.5rem;  color: var(--anzhiyu-fontcolor);  white-space: nowrap;&#125;#nav #blog_name &#123;  flex-wrap: nowrap;  height: 60px;  display: flex;  align-items: center;  /* z-index: 102; */  transition: 0.3s;&#125;.back-home-button .back-menu-list .back-menu-item .back-menu-item-icon &#123;  width: 24px;  height: 24px;  border-radius: 24px;  background: var(--anzhiyu-secondbg);&#125;#page-header #nav .back-home-button &#123;  cursor: pointer;  position: relative;&#125;@media screen and (min-width: 1300px) &#123;  #nav a:hover &#123;    transform: scale(1.03);  &#125;&#125;.back-home-button .back-menu-list .back-menu-item:hover .back-menu-item-text &#123;  color: var(--anzhiyu-white);&#125;.back-menu-item-icon.loading img &#123;  width: 25px;&#125;#page-header #nav #menus .nav-button.long a.totopbtn,#page-header #nav #menus .nav-button.long,#page-header #nav #menus .nav-button.long a.totopbtn span &#123;  width: 70px;&#125;#page-header #nav #menus .nav-button.long a.totopbtn span &#123;  border-radius: 35px;  display: flex;  justify-content: center;  align-items: center;  transition: 0.3s;  white-space: nowrap;&#125;#page-header #nav #menus .nav-button.long a.totopbtn:hover &#123;  border-radius: 35px;  height: 30px;&#125;#nav #search-button &#123;  padding-left: 0;&#125;#page-header #nav .nav-button &#123;  margin-left: 0.5rem;  padding: 0;&#125;#page-header:not(.is-top-bar) #nav-totop a &#123;  display: none;&#125;#search-button a.site-page.social-icon.search span &#123;  display: none;&#125;
+颜色css（安知鱼）
+/* 颜色 */:root &#123;  --anzhiyu-theme-op: #4259ef23;  --anzhiyu-white: #fff;  --anzhiyu-black: #000;  --anzhiyu-none: rgba(0, 0, 0, 0);  --anzhiyu-gray: #999999;  --anzhiyu-yellow: #ffc93e;  --anzhiyu-border-radius: 8px;  --anzhiyu-main: var(--anzhiyu-theme);  --anzhiyu-main-op: var(--anzhiyu-theme-op);  --anzhiyu-shadow-theme: 0 8px 12px -3px var(--anzhiyu-theme-op);  --anzhiyu-shadow-main: 0 8px 12px -3px var(--anzhiyu-main-op);  --anzhiyu-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.2);  --anzhiyu-shadow-white: 0 8px 12px -3px rgba(255, 255, 255, 0.2);  --anzhiyu-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);  --anzhiyu-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, 0.12);  --anzhiyu-shadow-red: 0 8px 12px -3px #ee7d7936;  --anzhiyu-shadow-green: 0 8px 12px -3px #87ee7936;  --anzhiyu-shadow-border: 0 8px 16px -4px #2c2d300c;  --anzhiyu-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);  --style-border: 1px solid var(--anzhiyu-card-border);  --anzhiyu-blue-main: #3b70fc;  --style-border-hover: 1px solid var(--anzhiyu-main);  --style-border-dashed: 1px dashed var(--anzhiyu-theme-op);  --style-border-avatar: 4px solid var(--anzhiyu-background);  --style-border-always: 1px solid var(--anzhiyu-card-border);  --anzhiyu-white-acrylic1: #fefeff !important;  --anzhiyu-white-acrylic2: #fcfdff !important;  --anzhiyu-black-acrylic2: #08080a !important;  --anzhiyu-black-acrylic1: #0b0b0e !important;&#125;[data-theme=&quot;light&quot;] &#123;  --anzhiyu-theme: #3b70fc;  --anzhiyu-theme-op: #4259ef23;  --anzhiyu-blue: #3b70fc;  --anzhiyu-red: #d8213c;  --anzhiyu-pink: #ff7c7c;  --anzhiyu-green: #57bd6a;  --anzhiyu-fontcolor: #363636;  --anzhiyu-background: #f7f9fe;  --anzhiyu-reverse: #000;  --anzhiyu-maskbg: rgba(255, 255, 255, 0.6);  --anzhiyu-maskbgdeep: rgba(255, 255, 255, 0.85);  --anzhiyu-hovertext: var(--anzhiyu-theme);  --anzhiyu-ahoverbg: #f7f7fa;  --anzhiyu-lighttext: var(--anzhiyu-main);  --anzhiyu-secondtext: rgba(60, 60, 67, 0.6);  --anzhiyu-scrollbar: rgba(60, 60, 67, 0.4);  --anzhiyu-card-btn-bg: #edf0f7;  --anzhiyu-post-blockquote-bg: #fafcff;  --anzhiyu-post-tabs-bg: #f2f5f8;  --anzhiyu-secondbg: #edf0f7;  --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);  --anzhiyu-card-bg: #fff;  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);  --anzhiyu-card-border: #c0c6d8;&#125;[data-theme=&quot;dark&quot;] &#123;  --anzhiyu-theme: #0084ff;  --anzhiyu-theme-op: #0084ff23;  --anzhiyu-blue: #0084ff;  --anzhiyu-red: #ff3842;  --anzhiyu-pink: #ff7c7c;  --anzhiyu-green: #57bd6a;  --anzhiyu-fontcolor: #f7f7fa;  --anzhiyu-background: #18171d;  --anzhiyu-reverse: #fff;  --anzhiyu-maskbg: rgba(0, 0, 0, 0.6);  --anzhiyu-maskbgdeep: rgba(0, 0, 0, 0.85);  --anzhiyu-hovertext: #0a84ff;  --anzhiyu-ahoverbg: #fff;  --anzhiyu-lighttext: #f2b94b;  --anzhiyu-secondtext: #a1a2b8;  --anzhiyu-scrollbar: rgba(200, 200, 223, 0.4);  --anzhiyu-card-btn-bg: #30343f;  --anzhiyu-post-blockquote-bg: #000;  --anzhiyu-post-tabs-bg: #121212;  --anzhiyu-secondbg: #30343f;  --anzhiyu-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);  --anzhiyu-card-bg: #1d1b26;  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);  --anzhiyu-card-border: #42444a;&#125;
+添加自定义JS添加自定义 js，开启 pjax，且引入的时候在标签上添加data-pjax属性 
+// 返回顶部 显示网页阅读进度window.onscroll = percent; // 执行函数// 页面百分比function percent() &#123;  let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度    b =      Math.max(        document.body.scrollHeight,        document.documentElement.scrollHeight,        document.body.offsetHeight,        document.documentElement.offsetHeight,        document.body.clientHeight,        document.documentElement.clientHeight      ) - document.documentElement.clientHeight, // 整个网页高度 减去 可视高度    result = Math.round((a / b) * 100), // 计算百分比    btn = document.querySelector(&quot;#percent&quot;); // 获取图标  result &lt;= 99 || (result = 99), (btn.innerHTML = result);&#125;document.getElementById(&quot;page-name&quot;).innerText = document.title.split(&quot; | 安知鱼&quot;)[0];
+main.js为了处理顶栏一闪而过的 bug，修改本地themes/butterfly/source/js/main.js，注意有引用线上版本的话一定要使用本地版本改完再自行上传线上版本  
+请不要无脑复制，自行更改对比内容
+  window.scrollCollect = () =&gt; &#123;        return btf.throttle(function (e) &#123;          const currentTop = window.scrollY || document.documentElement.scrollTop          const isDown = scrollDirection(currentTop)          if (currentTop &gt; 56) &#123;+           $header.classList.add(&#x27;is-top-bar&#x27;)            if (isDown) &#123;              if ($header.classList.contains(&#x27;nav-visible&#x27;)) $header.classList.remove(&#x27;nav-visible&#x27;)              if (isChatBtnShow &amp;&amp; isChatShow === true) &#123;                chatBtnHide()                isChatShow = false              &#125;            &#125; else &#123;              if (!$header.classList.contains(&#x27;nav-visible&#x27;)) $header.classList.add(&#x27;nav-visible&#x27;)              if (isChatBtnHide &amp;&amp; isChatShow === false) &#123;                chatBtnShow()                isChatShow = true              &#125;            &#125;            $header.classList.add(&#x27;nav-fixed&#x27;)            if (window.getComputedStyle($rightside).getPropertyValue(&#x27;opacity&#x27;) === &#x27;0&#x27;) &#123;              $rightside.style.cssText = &#x27;opacity: 0.8; transform: translateX(-58px)&#x27;            &#125;          &#125; else &#123;            if (currentTop === 0) &#123;-             $header.classList.remove(&#x27;nav-fixed&#x27;, &#x27;nav-visible&#x27;)+             $header.classList.remove(&#x27;is-top-bar&#x27;)            &#125;            $rightside.style.cssText = &quot;opacity: &#x27;&#x27;; transform: &#x27;&#x27;&quot;          &#125;          if (document.body.scrollHeight &lt;= innerHeight) &#123;            $rightside.style.cssText = &#x27;opacity: 0.8; transform: translateX(-58px)&#x27;          &#125;        &#125;, 200)()      &#125;
+header&#x2F;index.pug修改  themes&#x2F;butterfly&#x2F;layout&#x2F;includes&#x2F;header&#x2F;index.pug其中 nav-visible 可以控制默认显示的是站点标题还是导航栏菜单 
+请不要无脑复制，自行更改对比内容 
+  if top_img !== false    - var imgSource = top_img &amp;&amp; top_img.indexOf(&#x27;/&#x27;) !== -1 ? `background-image: url(&#x27;$&#123;url_for(top_img)&#125;&#x27;)` : `background: $&#123;top_img&#125;`    - var bg_img = top_img ? imgSource : &#x27;&#x27;    - var site_title = page.title || page.tag || page.category || config.title-   - var isHomeClass = is_home() ? &#x27;full_page&#x27; : &#x27;not-home-page&#x27;+   - var isHomeClass = is_home() ? &#x27;full_page nav-fixed nav-visible&#x27; : &#x27;not-home-page&#x27;    - is_post() ? isHomeClass = &#x27;post-bg&#x27; : isHomeClass  else    - var isHomeClass = &#x27;not-top-img&#x27;
+nav.pug替换  themes&#x2F;butterfly&#x2F;layout&#x2F;includes&#x2F;header&#x2F;nav.pug, 改动太多了，懒的对比了，直接替换好啦  
+- const &#123; darkmode &#125; = themenav#nav  span#blog_name    .back-home-button(tabindex=&#x27;-1&#x27;)      i.back-home-button-icon.fas.fa-grip-vertical      .back-menu-list-groups        .back-menu-list-group          .back-menu-list-title 网页          .back-menu-list            a.back-menu-item(href=&#x27;/&#x27;, title=&#x27;前往博客主页&#x27;, target=&#x27;_blank&#x27;, one-link-mark=&#x27;yes&#x27;)              img.back-menu-item-icon(src=&#x27;https://image.anzhiy.cn/adminuploads/1/2022/09/05/6315ec9737ac4.png&#x27;)              span.back-menu-item-text 博客            a.back-menu-item(href=&#x27;https://space.bilibili.com/1466122645&#x27;, rel=&#x27;external nofollow&#x27;, title=&#x27;前往B站主页&#x27;, target=&#x27;_blank&#x27;, one-link-mark=&#x27;yes&#x27;)              img.back-menu-item-icon(src=&#x27;https://image.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg&#x27;)              span.back-menu-item-text 哔哩哔哩            a.back-menu-item(href=&#x27;https://www.123pan.com/s/CvzRVv-BNfKA&#x27;, rel=&#x27;external nofollow&#x27;, title=&#x27;前往分享页&#x27;, target=&#x27;_blank&#x27;, one-link-mark=&#x27;yes&#x27;)              img.back-menu-item-icon(src=&#x27;https://image.anzhiy.cn/adminuploads/1/2022/04/27/6268e7d9de532.png&#x27;)              span.back-menu-item-text 分享云盘        .back-menu-list-group          .back-menu-list-title 项目          .back-menu-list    a#site-name(href=url_for(&#x27;/&#x27;))      .title #[=config.title]      i.fa-solid.fa-house  div.mask-name-container    center(id=&quot;name-container&quot;)      a(id=&quot;page-name&quot; href=&quot;javascript:rmf.scrollToTop()&quot;) PAGE_NAME  #menus    if (theme.algolia_search.enable || theme.local_search.enable)      div.nav-button#search-button        a.site-page.social-icon.search          i.fas.fa-search.fa-fw          span=&#x27; &#x27;+_p(&#x27;search.title&#x27;)    if darkmode.enable &amp;&amp; darkmode.button      div.nav-button#darkmode_navswitch        a.darkmode_switchbutton(type=&quot;button&quot; title=_p(&#x27;rightside.night_mode_title&#x27;) onclick=&quot;rmf.switchDarkMode()&quot;)          i.fas.fa-adjust    div.nav-button#nav-totop      a.totopbtn        i.fas.fa-arrow-up        span#percent(onclick=&quot;btf.scrollToDest(0,500)&quot;) 0    !=partial(&#x27;includes/header/menu_item&#x27;, &#123;&#125;, &#123;cache: true&#125;)    #toggle-menu      a.site-page        i.fas.fa-bars.fa-fw
+写在最后这是一个粗略的教程（抱歉），图标可以在主题配置文件自行更改  
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Butterfly🦋</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>添加侧边栏时钟</title>
+    <url>/posts/%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%97%B6%E9%92%9F.html</url>
+    <content><![CDATA[
+前言需要前置教程
+ 
+风险等级III
+
+前置教程 点击查看参考内容 
+              
+              基于下文修改  参考方向内容安知鱼给hexo-theme-butterfly添加侧边栏电子钟
+              
+             
+前置教程：点击查看
+正式教程1.如果有安装店长的插件版侧边栏电子钟（与店长的电子钟冲突），在博客根目录[Blogroot]下打开终端，运行以下指令  
+# 卸载原版电子钟npm uninstall hexo-butterfly-clock
+2.安装插件(安知鱼)在博客根目录[Blogroot]下打开终端，运行以下指令：  
+npm install hexo-butterfly-clock-anzhiyu --save
+3.添加配置信息，以下为写法示例在站点配置文件_config.yml或者主题配置文件_config.butterfly.yml中添加  
+# electric_clock(Iceの小站)# see https://blog.081113.xyz/2022/12/03/butterfly添加侧边栏时钟/electric_clock:  enable: true # 开关  priority: 5 #过滤器优先权  enable_page: all # 应用页面  exclude:  # - /posts/  # - /about/  layout: # 挂载容器类型    type: class    name: sticky_layout    index: 0  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0  qweather_key: # 和风天气key，注意空一格  gaud_map_key: # 高得地图web服务key，注意空一格  default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气  rectangle: 经度,纬度 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
+其中qweather_key和gaud_map_key需要自己去申请对应的 api key
+  
+API获取教程（非必要） 点击查看获取教程 
+              
+              qweather_key申请地址: https://id.qweather.com/#/login1.登录后进入控制台2.创建应用3.填写应用名称和 key 名称随意4.选择 WebApi5.复制 keygaud_map_key申请地址: https://lbs.amap.com/1.登录后进入控制台2.创建应用，名称随意，类型选其他3.点击添加, key名称随意，服务平台选择Web服务,点击提交
+              
+               
+参数解释
+
+
+参数
+备选值&#x2F;类型
+释义
+
+
+
+priority
+number
+【可选】过滤器优先级，数值越小，执行越早，默认为 10，选填
+
+
+enable
+true&#x2F;false
+【必选】控制开关
+
+
+enable_page
+path&#x2F;all
+【可选】填写想要应用的页面的相对路径（即路由地址）,如根目录就填’&#x2F;‘,分类页面就填’&#x2F;categories&#x2F;‘。若要应用于所有页面，就填’all’，默认为 all
+
+
+exclude
+path
+【可选】填写想要屏蔽的页面，可以多个。写法见示例。原理是将屏蔽项的内容逐个放到当前路径去匹配，若当前路径包含任一屏蔽项，则不会挂载。
+
+
+layout.type
+id&#x2F;class
+【可选】挂载容器类型，填写 id 或 class，不填则默认为 id
+
+
+layout.name
+text
+【必选】挂载容器名称
+
+
+layout.index
+0 和正整数
+【可选】前提是 layout.type 为 class，因为同一页面可能有多个 class，此项用来确认究竟排在第几个顺位
+
+
+loading
+URL
+【可选】电子钟加载动画的图片
+
+
+clock_css
+URL
+【可选】电子钟样式 CDN 资源
+
+
+clock_js
+URL
+【可选】电子钟执行脚本 CDN 资源
+
+
+ip_api
+URL
+【可选】获取时钟 IP 的 API
+
+
+qweather_key
+text
+【可选】和风天气 key
+
+
+gaud_map_key
+text
+【可选】高得地图 web 服务 key
+
+
+default_rectangle
+text
+【可选】开启后将一直显示 rectangle 位置的天气，否则将获取访问者的地理位置与天气
+
+
+rectangle
+text
+【可选】获取访问者位置失败时会显示该位置的天气，同时该位置为开启 default_rectangle 后的位置
+
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Butterfly🦋</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Butterfly主题魔改日记（一）</title>
+    <url>/posts/%E9%AD%94%E6%94%B9%E6%97%A5%E8%AE%B0.html</url>
+    <content><![CDATA[前言 点击查看更新日志 
+              
+              更新日志2022-12-2更新内容-自定义新版右键菜单2022-12-1开始撰写本文章更新内容-导航栏魔改方案 出处Ice
+              
+            
+本教程需要一定魔改基础如何添加CSS&#x2F;JS?
+
+
+风险表格  
+
+
+
+代号
+内容
+
+
+
+I
+一级风险:不适合小白且需要修改源码
+
+
+II
+二级风险:学习后可放心修改但需要修改源码
+
+
+III
+三级风险:学习后可放心修改
+
+
+IIII
+四级风险:放心修改，及其容易
+
+
+
+魔改内容导航栏修改方案（自用）风险等级I
+
+
+    引用站外地址
+    
+        
+        
+            详细内容
+            本站教程
+        
+        
+    
+      
+修改同款右键菜单(自用)风险等级II,请紧跟教程进行修改
+
+
+    引用站外地址
+    
+        
+        
+            详细内容
+            本站教程
+        
+        
+    
+      
+修改同款电子钟(自用)风险等级III,非常的容易
+
+
+    引用站外地址
+    
+        
+        
+            详细内容
+            本站教程
+        
+        
+    
+      
+推荐内容
+
+
+文章
+地址
+
+
+
+添加CSS&#x2F;JS
+添加自定义CSS&#x2F;JS
+
+
+添加侧边栏电子钟
+使用教程
+
+
+珍藏壁纸网站分享
+壁纸网站
+
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Butterfly🦋</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新人入站必读</title>
+    <url>/posts/16590.html</url>
+    <content><![CDATA[前言新人入站请先阅读完本稿件
+ 
+架构本站使用Hexo+butterfly进行搭建  
+内容本站将分享以下内容：1.部分站主的生活记录2.站主的编程成果3.站主的分享软件4.站主的语录     
+我们允许和谐讨论非违法问题友善挂载合法启示正确申请加入广告  
+我们不允许发布任何涉足政治.法律的言论  
+
+发布黄.赌.毒   
+
+人身攻击站长，站友，路人  
+
+
+****
+
+本页内容禁止私自取用
+
+
+]]></content>
+      <categories>
+        <category>站点文章</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/16107.html</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server$ hexo server
+
+More info: Server
+Generate static files$ hexo generate
+
+More info: Generating
+Deploy to remote sites$ hexo deploy
+
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
+    <title>世界杯赛程</title>
+    <url>/posts/38279.html</url>
+    <content><![CDATA[赛程图片摘自腾讯网
+
+
+文字版第一轮赛程：11月21日18点：塞内加尔vs荷兰11月21日21点：英格兰vs伊朗11月22日0点：卡塔尔vs厄瓜多尔11月22日3点：美国vs威尔士11月22日18点：阿根廷vs沙特11月22日21点：丹麦vs突尼斯11月23日0点：墨西哥vs波兰11月23日3点：法国vs澳大利亚11月23日18点：摩洛哥vs克罗地亚11月23日21点：德国vs日本11月24日0点：西班牙vs哥斯达黎加11月24日3点：比利时vs加拿大11月24日18点：瑞士vs喀麦隆11月24日21点：乌拉圭vs韩国11月25日0点：葡萄牙vs加纳11月25日3点：巴西vs塞尔维亚
+第二轮赛程：11月25日18点：威尔士vs伊朗11月25日21点：卡塔尔vs塞内加尔11月26日0点：荷兰vs厄瓜多尔11月26日3点：英格兰vs美国11月26日18点：突尼斯vs澳大利亚11月26日21点：波兰vs沙特11月27日0点：法国vs丹麦11月27日3点：阿根廷vs墨西哥11月27日18点，日本vs哥斯达黎加11月27日21点：比利时vs摩洛哥11月28日0点：克罗地亚vs加拿大11月28日3点，西班牙vs德国11月28日21点：韩国vs加纳11月28日18点：喀麦隆vs塞尔维亚11月29日0点：巴西vs瑞士11月29日3点：葡萄牙vs乌拉圭
+第三轮赛程：11月29日23点，荷兰vs卡塔尔11月29日23点，厄瓜多尔vs塞内加尔11月30日3点，威尔士vs英格兰11月30日3点，伊朗vs美国11月30日23点，突尼斯vs法国11月30日23点，澳大利亚vs丹麦12月1日3点，沙特vs墨西哥12月1日3点，波兰vs阿根廷12月1日23点，克罗地亚vs比利时12月1日23点，加拿大vs摩洛哥12月2日3点，日本vs西班牙12月2日3点，哥斯达黎加vs德国12月2日23点，韩国vs葡萄牙12月2日23点，加纳vs乌拉圭12月3日3点，塞尔维亚vs瑞士12月3日3点，喀麦隆vs巴西1&#x2F;8决赛：2022年12月3日-12月6日1&#x2F;4决赛：2022年12月9日、10日半决赛：2022年12月13日、14日3&#x2F;4名决赛：2022年12月17日
+
+决赛：2022年12月18日
+]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>冰块_刷屏器</title>
+    <url>/posts/17335.html</url>
+    <content><![CDATA[正文介绍功能多 效果好
+
+✅可限制次数✅选择输入方式✅适配QQ✅适配Wechat✅快速控制✅可视化GUI✅易语言打造✅无病毒木马 免杀
+你是否还在为被骚扰而无可奈何？这款刷屏器将助你一臂之力！  
+多种功能设定+多种情况选择  
+免费 的软件使用  
+
+为何不试试呢？
+软件截图  
+  
+  
+
+下载链接下载程序  
+
+注意事项下载失败请关闭Win10安全中心或使用IDM下载器下载！纯属误报！  
+
+版权 Ice_exe开发 Ice_exe 
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>共住人高烧</title>
+    <url>/posts/%E9%AB%98%E7%83%A7.html</url>
+    <content><![CDATA[推荐阅读:月考分析
+  
+正文  
+Part-A  实时情况背景：居家隔离期间
+ 
+2022-12-22下午3时，我妈下班回家，发现有前一天晚上相同的症状即头疼，四肢酸，脑涨，全身热。到家时及路上佩戴口罩，回家后，我立即采取消毒措施。共住人服用退烧&#x2F;感冒药：“感冒清胶囊”  
+2022-12-22下午4时，测量体温5次。分别为 电子体温计：35.4° 36.5° 36.4° 36.2° 水银温度计：38.7°当然，采取的是水银温度计的数据。并进行消毒（房间+厕所+体温计）  本人原感染流感，无异样  
+2022-12-22下午5时，本人体温无问题，似乎有些许头晕，共住人体温为38.9°，隔离厕所、房间等，2小时一消毒并通风。   
+2022-12-22下午6时，晚饭    
+2022-12-22下午8时，本人体温无问题，共住人体温为39.5°，消毒并通风。暂未确定是否为新冠感染所致。    
+2022-12-22下午9时，本人体温无问题，共住人体温为39.0°，消毒并通风。降温0.5°！服用药物：酚麻美敏片（复合成分为 乙酰氨基酚+盐酸伪麻黄碱+氢溴酸右美沙芬+马来酸氯苯那敏）
+2022-12-23上午7时，本人体温无问题，共住人体温为37.7°，降温1.3°!可以确定，酚麻美敏片是有效的。可能为流感所致发热。    
+2022-12-23下午2时，本人体温无问题，共住人体温为37.1°，降温0.6°!服用药物：酚麻美敏片X2（复合成分为 乙酰氨基酚+盐酸伪麻黄碱+氢溴酸右美沙芬+马来酸氯苯那敏）  
+2022-12-23下午8时，本人体温无问题，共住人体温为38.5°，升温1.4°!       
+2022-12-23下午9时，本人体温无问题，共住人体温为38.3°，降温0.2°!       
+Part-B  记录表
+
+
+日期
+体温-MAX
+体温-MIN
+情况
+
+
+
+2022&#x2F;12&#x2F;22
+39.5°
+38.7°
+高烧,全身疼痛，干咳
+
+
+2022&#x2F;12&#x2F;23
+38.5°
+37.5°
+中高烧,疼痛缓释，喉咙沙哑
+
+
+2022&#x2F;12&#x2F;24
+-
+-
+-
+
+
+2022&#x2F;12&#x2F;25
+-
+-
+-
+
+
+2022&#x2F;12&#x2F;26
+-
+-
+-
+
+
+2022&#x2F;12&#x2F;27
+-
+-
+-
+
+
+2022&#x2F;12&#x2F;28
+-
+-
+-
+
+
+[持续更新]  
+]]></content>
+      <categories>
+        <category>居家隔离</category>
+      </categories>
+      <tags>
+        <tag>新冠</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文学积累-1</title>
+    <url>/posts/44196.html</url>
+    <content><![CDATA[简介继续积累哦
+
+✅作文素材✅作文龙头✅作文凤尾✅作文精段
+
+
+
+作文龙头1.信念是巍巍大厦的栋梁，没有它，就只是一堆散乱的砖瓦；信念是滔滔大江的河床，没有它，就只有一片泛滥的波浪；信念是熊熊烈火的引星，没有它，就只有一把冰冷的柴把；信念是远洋巨轮的主机，没有它，就只剩下瘫痪的巨架。（《信念》）
+2.站在历史的海岸漫溯那一道道历史沟渠：楚大夫沉吟泽畔，九死不悔；魏武帝扬鞭东指，壮心不已；陶渊明悠然南山，饮酒采菊……他们选择了永恒，纵然谄媚诬蔑视听，也不随其流扬其波，这是执著的选择；纵然马革裹尸，魂归狼烟，只是豪壮的选择；纵然一身清苦，终日难饱，也愿怡然自乐，躬耕陇亩，这是高雅的选择。在一番选择中，帝王将相成其盖世伟业，贤士迁客成其千古文章。（《选择》）
+3.只有启程，才会到达理想和目的地，只有拼搏，才会获得辉煌的成功，只有播种，才会有收获。只有追求，才会品味堂堂正正的人。（《追求》）
+4.如果说友谊是一颗常青树，那么，浇灌它的必定是出自心田的清泉；如果说友谊是一朵开不败的鲜花，那么，照耀它的必定是从心中升起的太阳。多少笑声都是友谊唤起的，多少眼泪都是友谊揩干的。友谊的港湾温情脉脉，友谊的清风灌满征帆。友谊不是感情的投资，它不需要股息和分红。（友谊可以换其他词语）（《友谊》）
+
+作文凤尾1.成败荣辱，皆是过眼云烟，只有心灵的快乐才是永恒的。学会留心吧，于平淡处体会生命的爱与美，你会发现向日葵在朝你微笑，鸟儿在为你歌唱，小树在和你招手……学会留心吧，你的眼前会出现明亮的阳光，你的鼻子会嗅到诱人的花香，你的肌肤会享受春风的柔情……学会留心吧，你的生命会因此而充实、快乐，你的心中会燃起希望!
+2.你可以用发现美的眼睛留心生活，你也可以用好奇的心理观察生活，你也可以通过好坏、善恶、美丑的对比认知生活。总之一句话：我们要学会留心，为人生创造更大的价值。
+
+作文精段
+注意事项参考资料部分来源网络！
+
+版权 Ice_exe
+]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>又是月考吖[分析说明]</title>
+    <url>/posts/%E5%8F%88%E6%98%AF%E6%9C%88%E8%80%83%E5%90%96%5B%E5%88%86%E6%9E%90%E8%AF%B4%E6%98%8E%5D.html</url>
+    <content><![CDATA[推荐阅读:Butterfly魔改日记①
+  
+正文Part-A  Feels
+
+
+科目
+完成率
+时间占用
+自评卷
+自评
+
+
+
+语文(作文)
+100%
+53&#x2F;60 min
+中等
+作文就是玄学
+
+
+语文(基础)
+100%
+81&#x2F;85 min
+中偏下等
+胜券在握
+
+
+数学
+96%
+115&#x2F;115 min
+上等
+内心慌慌
+
+
+英语
+100%
+91&#x2F;85 min
+中偏上等
+内心慌慌
+
+
+政治
+0%
+0&#x2F;0 min
+-
+-
+
+
+历史
+0%
+0&#x2F;0 min
+-
+-
+
+
+物理
+100%
+61&#x2F;85 min
+中偏下等
+胜券在握
+
+
+PS:语文作文题:令你难忘的声音数学情况:压轴多物理:少数新定义较难  
+Part-B Problems自我分析:答卷速度还是不够快啊！尤其是当听到身边人都在翻卷子了，自己2&#x2F;4还没写完，那叫一个字慌…还好难题不多，多的话差不多就寄了…  
+
+
+
+问题
+对比
+解决方法
+
+
+
+答卷速度慢
+仍然存在
+多练习
+
+
+做题不安心
+仍然存在
+限时练
+
+
+小题容易错
+仍然存在
+多练习
+
+
+Part-C How to solve them? &amp; Goals问题出现了，那么肯定是要解决的。具体怎么解决呢？1.练练习是什么？练习的目的是什么？练习，当然是为了让我们在学习之余用”做题目”的方式进行对知识点的巩固和积累。练习是学习过程中必不可少的一部分。据我了解，我的大部分同学都有自己的小本本（啊也就是自己的小练习），随众流，作者也购入了。但是，有了题海战术的资本，是否行动是一个非常重要的事情.Ps:插入一个震惊我一百年的事情:竟然有同学认为我不碰游戏，不碰网聊，甚至不碰B站不碰任何一切被理解为会“影响学习”的事情…这件事也是本文其中一个灵感————助力每一个梦想解读“助力每一个梦想”：（开玩笑别当真）既然同学们这么抬举我，那么就“助力每一个梦想”，不负众望嘛
+
+
+
+练习类型
+计划
+
+
+
+基本习题
+在预习阶段完成巩固
+
+
+提高习题
+课后且休息之余完成
+
+
+2.背背诵的重要性真的不容小觑！作者是深有体会！到目前为止，最讨厌背诵的无非是英语的课文与生词了。但是，倘若不予背诵这些内容，那么日常作业就会出现各式各样的问题….词汇积累真的非常重要！词汇量少，那阅读理解差不多是完犊子了……   
+
+
+
+练习类型
+计划
+
+
+
+背诵
+每日5-10词
+
+
+Goals作者其实认为自己并不是没有能力去搏一搏，简单分析就可以明显发现，大部分时间都被’懒’给占用掉了.. 
+
+
+
+时间区间
+“偷懒”占用
+举例事件
+
+
+
+1:00-5:20
+0%
+-
+
+
+5:20-5:40
+50%
+赖床期
+
+
+5:40-6:35
+0%
+-
+
+
+6:35-6:55
+50%
+摆作业.小聊
+
+
+在校
+130min休息
+-
+
+
+PS:在校的130min是我属实没有想到的，甚至以为算错了. 
+如何合理利用在校时间？计算：10+5+10+10+10+10+25+10+10+10+25&#x3D;8*10+50+5≈130min年级里不少大佬每天都能在学校里完成所有老师部署的任务.这也就说得通了.反观自己，130min的休息时间是完全绰绰有余的，那时间到底去哪里了呢？——好问题，回顾一天的行为，很容易得出：被杂乱无章的事件紊乱这个结论。同样的时间，不一样的效率，所完成的任务数量也是不相同的，那么，这就意味着，我的学习方法，也就是时间、事件安排出了不小的问题。判断依据:以每周四的作业为例，周四下午的倒数第二节课为自习，那么我所有的时间为130min+45min&#x3D;175min，约等于3个小时的时间，却在放学之前仅有一次完成过所有的作业。相比，在某些同学已经在走廊休息了。简单叙述一下例:1.《随堂反馈》2面&#x3D;10min2.数学练习&#x3D;20min3.物理练习&#x3D;10-20min4.政治&#x3D;10-20min5.历史&#x3D;10-20min我们会发现，②③④⑤类型占用时间较多，大约为两个课间，因为词汇量不足，英语练习的时间有可能远远超越理论范围，到达甚至30min左右。然而，在课间不能完成一个大区间任务的话，准时到来的上课铃将会打乱你的时间安排….这就是非常尴尬的一点。对于历史，政治这俩科，只要上课稍微听的仔细点，作业肯定是问题不大的。那么，我们就可以在这俩科上开刀，也就是在上完课后，直接趁热打铁，一鼓作气完成练习。对于英语，数学这类，我们更适合在巩固阶段完成练习，这样的话性价比会更高！也就是在不同的课结束后，以巩固的目的，做基础的练习。   
+[等待更新]
+]]></content>
+      <categories>
+        <category>学校</category>
+      </categories>
+      <tags>
+        <tag>考试分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>期中考试总结及部分答案</title>
+    <url>/posts/353.html</url>
+    <content><![CDATA[简介心态第一，测试第二
+
+
+正文自我总结数学总体这次数学的“阳光测评”整体来讲还是比较难的 毕竟人家老师也这么说测完和讲评完后同学们的情绪波动还是蛮大的qwq个人1.又进粗心的坑了…..选择填空就拱手9分2.做题速度太慢，第一遍做大题几乎空了4道，结果时间不太够了，好在后来大部分都补了回来而且对了 lol3.部分解答题有点ex，大部分题本质会做，但没想那么多..  
+总的讲就是多练.多看.多学
+英语1.分数没出来，作文前浅浅估了一下分数，大概还是不错的，但是和年级组里的某些大佬们还是有不少差距的（毕竟作文生死未卜…2.阅读理解一道送分死题白给 T-T3.词汇量还是不够，部分文章部分句子没看懂，靠猜…听说这次作文批的蛮严的……   
+语文1.和英语一样，作文分未出，生死未卜2.第一,二部分做的还不是很满意，大阅读情感还是没抓到位！！在线蹲一个语文学科大佬带飞！！ QQ：1983589713  
+物理1.没话说，错就是不小心，都是死题  
+其他科目1.政治历史都不错，地理不知道生物不错  
+
+答案
+版权 Ice_exe
+]]></content>
+      <categories>
+        <category>学校</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>校园快线</title>
+    <url>/posts/8124.html</url>
+    <content><![CDATA[Welcome几个星期的运营，也是出现了不少问题，谨慎选择乘坐
+
+ -9月1日起，常熟特色公交服务项目“先锋护航”校园快线正式开行第一批快线服务于常熟市外国语初级中学，目前该校申请乘坐校园快线的学生已达495名，常熟相关公交公司共投入了10辆公交车，全力服务学生上下学。      
+ -常熟外国语“校园快线”是常熟首条先试先行的线路。该线路在既有运力条件下，最大限度串联起学校施教区内学生所在小区，方便学生出行，减少家长接送压力，大大缓解学校周边道路通行压力，有效提升虞山北路周边公交服务线网运行效率。
+ -此外，为了让家长实时掌握孩子的乘车情况，市交通运输局积极做好相关配套信息化建设，家长可绑定“常熟行”微信公众号实时了解学生乘车情况，使上下学的路途更加放心安心。
+
+参考文本 扬子晚报
+]]></content>
+      <categories>
+        <category>学校</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>面对自招有点紧张啊😅</title>
+    <url>/posts/56680.html</url>
+    <content><![CDATA[长风破浪会有时,直挂云帆济沧海! 
+  
+
+天生我才必有用导语:为了愿望，我们百炼成钢；为了理想，我们傲雪凌霜。奋战百天，让飞翔的梦在夏季张开翅膀，奋战百天，让雄心与智慧在六月闪光。正如古语所言”宁吃百日苦，不留终生憾”,吾辈当自强!今天是2023年5月18日,时光飞逝,日月如梭,转眼间我们即将迎来期末考试,这次的期末考试意义非凡,占比新入学测试资格的70%分数!八下这一路上,布满坎坷.有人说,你深陷坑中无法自拔;有人说,你才华横溢崭露锋芒.多种看法里,我更愿意遵从我梦想的方向!之前的文章中,我曾提出过这样一个观点”既然学不死,就往死里学”,在别人眼里,你确实是一个相对优秀的学生,但是我现在宁可称自己为学神!在我们的身边,有许许多多优秀的人,但”有阴必有阳”,也有不少待提升的人.古人云”近朱者赤,近墨者黑”,想必正是如此了.总而言之,在接下来极为关键或是直接可以称为决定性的日子里,我将加大马力,把握这临门一脚!尾声就在眼前,当下的努力便是善待未来的自己,更是对内心的一份交代!即使一无所有,也要拼出个所以然来!望梦想成真!加油吧,少年!  
+发篇文章感动下自己…
+]]></content>
+      <categories>
+        <category>校园</category>
+      </categories>
+      <tags>
+        <tag>决心</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在西浦的那些事（1）</title>
+    <url>/posts/1521.html</url>
+    <content><![CDATA[
+SAONotify("Tips","本文图片相较于其他文章多，加载慢请稍等");
+
+前言感谢Tianli为本博客提供的JSD镜像服务
+
+本文禁止转载.但不包括使用分享功能
+
+
+    引用站外地址
+    
+        
+        
+            Tianliの博客
+             https://tianli-blog.club/
+        
+        
+    
+    
+
+正文今年暑假，也是回了一趟外婆家距离上一次有3-4年了吧qwq体验了一回真正的农家生活，美哉美哉  
+前往之路随拍
+
+国产之光P1:CRH 2AP2:CRH 380B注：本人乘坐 CRH 380C  
+群山包夹的小镇茶山随拍
+
+来了这里，采茶肯定是得体验一下子的啦~
+生活记录
+  
+自己种的西瓜虽然是个村&#x2F;镇，但风景属实巴适~
+
+版权 Ice_exe本文禁止转载&#x2F;但不包括分享  
+]]></content>
+      <categories>
+        <category>关于我的</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>记一次butterfly主题重启</title>
+    <url>/posts/34039.html</url>
+    <content><![CDATA[感谢Decheng大佬提供的帮助
+
+本文为翻译方便，部分语段表达可能略显生硬
+
+
+    引用站外地址
+    
+        
+        
+            DeCheng
+            帮助者
+        
+        
+    
+    
+起因魔改的路上越走越偏，正好今天也是本人的生日，因此有了多余的时间来魔改逛店长的魔改教程时突然发现了“Github Action”这个东西，突然感觉似乎在大佬群里听说过这个东西，点开教程一看，了解到了“自动部署这个东西”。想到hexo四连的绝妙速度，脑袋一热，举手就干。到这里大家可能会感觉并没有什么复杂的东西，可是就是这一热，麻烦就大了。打开店长的教程，并采取行动。
+
+    引用站外地址
+    
+        
+        
+            使用Github Action自动部署
+            自用教程
+        
+        
+    
+    
+问题-01走着走着，直到……对于习惯使用单仓库部署的我，转变成双仓库（公共+私有）是件难事，当然，这种简单的小问题对于后面的来说qwq，也是很快就解决了；办法是新建一个分支“master”  
+问题-02继续进行，直到…..有了新仓库，那当然需要去手动配置。直到我发现，在Git中运行下方代码的时候….   
+git initgit add .git commit -m &quot;first commitgit branch -M maingit remote add origin https://xxxgit push origin -u main
+看到一堆从”git add.” 就开始Error,差不多疯掉了…报错内容大概是：fatal :detected dubious ownership in repository at ‘D:&#x2F;blog’解决方法：1.给git文件夹授予最高权限2.在博客根目录下运行git，输入以下代码  
+git config --global --add safe.directory &quot;*&quot;;
+（此代码的意思是，将本文件夹设置成安全目录，以解决拥有者问题）在执行这行代码之后，我们会发现，以后在git中运行的头中会多一个蓝色的小括号master，这样就是成功了！
+插曲-有关备份的东西在没有安装Github Action之前，博客文件夹的备份，一般非常的硬盒大概就是直接压缩整个文件夹（包括node_modules）……40000+的压缩文件数目也估计没谁了….
+问题-03解决完第二个问题，我们继续执行上方未完成的代码，好巧不巧……-“git remote add origin https://xxx”问题-正常情况下，链接应该是没有任何问题的，但是，我在这里犯了一个大错！（One hour later）问题分析结束，按大佬的话讲，应该是我没有连接上私密库！！！（也是无语了…）毕竟第一次搭建的时候，就没有把源代码上传到Github上，也是直接弄在本地了….这样，只能…..重…..头…..再…..来…………不过好在并不需要把之前的插件啊，博文啊，魔改内容啊等等重新整（不然真的得疯掉了当然，详细过程也不再赘述…..  
+结果最后，也是在大佬的巨巨巨巨大帮助之下完成了Github Action的部署，现在直接在桌面端就可以一键代替hexo四联了！！！！！这就是快乐！！！附上一张效果图
+
+当然，也是希望更多的朋友能在一开始就使用更方便快捷的Github Action！教程链接：  
+
+    引用站外地址
+    
+        
+        
+            部署教程
+            Github Action
+        
+        
+    
+    
+
+
+版权&#x2F;作者：Ice_exe
+]]></content>
+      <categories>
+        <category>站点文章</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>十大高清壁纸站</title>
+    <url>/posts/a853.html</url>
+    <content><![CDATA[本文转自知乎内容
+
+部分引用图片可能因网络波动无法正常加载
+
+今天介绍几个国内外比较好的壁纸下载站，都是提供免费下载，网站壁纸类别都很丰富，值得体验一番。
+01Wallpaper ABYSS
+壁纸网站 Wallpaper ABYSS 是全球最大的免费壁纸网站之一，有中文网页，资源非常多，每天都会更新壁纸，且分门别类清晰，手机、电脑壁纸全覆盖，分辨率从 2K-8K，也是很良心的网站。
+打开网站，如下，显示目前有 90 万 + 张壁纸，中文检索效果不佳，建议英文检索。
+
+下拉网页，就能看到如下分类，纵情的去看吧，8K 的分辨率都有，分类非常明确，人物、风景、汽车、花卉应有尽有。
+02wallhaven
+wallhaven 这个壁纸站也是非常有名气，也是提供免费下载，图片右键另存为即可下载哈。
+而且这个网站是社区式的，不少用户分享自己的壁纸。目前壁纸数量 85 万 +，用户数量 57 万 +，壁纸种类标签 7 万 +。
+比较喜欢这个网站的热度榜，每天都会有不同门类的壁纸热度，二次元、三次元、风景统统都有，可以按照颜色、分辨率等筛选不同类别的图片，当然 4K 壁纸也有哈。
+03猫猫壁纸
+猫猫壁纸下载站是一个提供各种尺寸、类型壁纸免费下载的国内网站.
+网站界面虽说比较复古，但壁纸十分丰富，壁纸数量粗略估计六位数，就是现在不更新了。不过壁纸数量确实已经极其丰富了。
+▼
+04美桌壁纸
+美桌壁纸这个网站也是个老站，资源相当丰富。各种日历壁纸、汽车、体育、动漫、风景、美女应有尽有。
+▼
+05微软 Design 壁纸
+微软设计网站的壁纸板块，提供微软的一些标志性的壁纸，诸如曲别针办公助手、XP 经典的田野、纸牌游戏等，在这基础上加以设计。如下壁纸质量相当高：
+▼官网直接提供壁纸下载，800MB+，一共 62 张，壁纸大小还是非常大的。
+06极简壁纸
+极简壁纸是国内的一个网站，也是爬取的一些精品壁纸网站，目前网站图片 3 万 +，提供免费下载，访问速度还是比较快的。壁纸质量也是很高！
+▼
+07回车桌面
+回车桌面壁纸是一个汇集各类壁纸的网站，网站界面也比较复古，但数量很多，里面的壁纸都可以原图右键另存为下载
+▼
+08unsplash
+unsplash 是一个提供壁纸下载的网站，壁纸质量很高，因为里面的_壁纸基本上都是摄影题材。
+尤为重要的是里面的图片无版权，随便商用修改，就是网站访问有些慢。
+▼
+09简约壁纸
+好多同学有时候为了找一张满意的壁纸能费一下午时间，那么可以试试这个小众的简约壁纸站，简约壁纸虽说配色单调，但这样的壁纸可以帮助你保持专注力（手动狗头）
+如下就是网站的主界面，分享的壁纸都提供免费下载，点开大图，单击右键另存为即可。
+
+欢迎评论留言！
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>壁纸</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鸽蛋历险记</title>
+    <url>/posts/43455.html</url>
+    <content><![CDATA[推荐阅读:新冠来袭
+  
+正文第一个蛋 附图
+Part-A  实时情况2023-2-17上午X时,诞下第一个蛋(组1)2023-2-18上午X时,诞下第二个蛋(组1)
+2023-2-24上午X时,诞下第一个蛋(组2)2023-2-25上午X时,诞下第二个蛋(组2)2023-2-25上午X时,诞下第三个蛋(组2)
+Part-B  记录表
+
+
+日期
+情况
+出壳
+长成
+孵化中
+
+
+
+2023&#x2F;2&#x2F;17
+完整
+0
+0
+1
+
+
+2023&#x2F;2&#x2F;18
+完整
+0
+0
+2
+
+
+2023&#x2F;2&#x2F;24
+完整
+0
+0
+3
+
+
+2023&#x2F;2&#x2F;25
+完整
+0
+0
+5
+
+
+2023&#x2F;3&#x2F;8
+完整
+1
+0
+4
+
+
+图集[持续更新]  
+]]></content>
+      <categories>
+        <category>宠物</category>
+      </categories>
+      <tags>
+        <tag>宠物</tag>
+      </tags>
+  </entry>
+</search>
