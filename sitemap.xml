@@ -2,42 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.081113.xyz/json/music.json</loc>
-    
-    <lastmod>2023-09-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/link/index.html</loc>
-    
-    <lastmod>2023-09-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/music/index.html</loc>
-    
-    <lastmod>2023-09-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/new/index.html</loc>
-    
-    <lastmod>2023-09-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.081113.xyz/tags/index.html</loc>
     
     <lastmod>2023-09-30</lastmod>
@@ -201,6 +165,42 @@
   
   <url>
     <loc>https://blog.081113.xyz/gbmusic/index.html</loc>
+    
+    <lastmod>2023-09-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/json/music.json</loc>
+    
+    <lastmod>2023-09-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/link/index.html</loc>
+    
+    <lastmod>2023-09-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/music/index.html</loc>
+    
+    <lastmod>2023-09-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/new/index.html</loc>
     
     <lastmod>2023-09-30</lastmod>
     
