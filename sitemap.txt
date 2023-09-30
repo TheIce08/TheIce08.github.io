@@ -1,3 +1,5 @@
+https://blog.081113.xyz/json/music.json
+https://blog.081113.xyz/link/index.html
 https://blog.081113.xyz/music/index.html
 https://blog.081113.xyz/new/index.html
 https://blog.081113.xyz/tags/index.html
@@ -19,8 +21,6 @@ https://blog.081113.xyz/essay/index.html
 https://blog.081113.xyz/fcircle/index.html
 https://blog.081113.xyz/gbdoc/index.html
 https://blog.081113.xyz/gbmusic/index.html
-https://blog.081113.xyz/json/music.json
-https://blog.081113.xyz/link/index.html
 https://blog.081113.xyz/posts/43455.html
 https://blog.081113.xyz/posts/26302.html
 https://blog.081113.xyz/posts/%E9%AB%98%E7%83%A7.html
