@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.081113.xyz/GPL/index.html</loc>
+    
+    <lastmod>2023-10-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.081113.xyz/about/index.html</loc>
     
     <lastmod>2023-10-14</lastmod>
@@ -156,15 +165,6 @@
   
   <url>
     <loc>https://blog.081113.xyz/%E7%95%99%E8%A8%80/404.html</loc>
-    
-    <lastmod>2023-10-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/GPL/index.html</loc>
     
     <lastmod>2023-10-14</lastmod>
     
