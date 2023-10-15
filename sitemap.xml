@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.081113.xyz/posts/35430.html</loc>
+    
+    <lastmod>2023-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/about/index.html</loc>
+    
+    <lastmod>2023-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/album/index.html</loc>
+    
+    <lastmod>2023-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/bkrj/index.html</loc>
+    
+    <lastmod>2023-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/categories/index.html</loc>
+    
+    <lastmod>2023-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/dailyPhoto/index.html</loc>
+    
+    <lastmod>2023-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.081113.xyz/essay/index.html</loc>
     
     <lastmod>2023-10-15</lastmod>
@@ -110,61 +164,7 @@
   </url>
   
   <url>
-    <loc>https://blog.081113.xyz/posts/35430.html</loc>
-    
-    <lastmod>2023-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.081113.xyz/GPL/index.html</loc>
-    
-    <lastmod>2023-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/about/index.html</loc>
-    
-    <lastmod>2023-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/album/index.html</loc>
-    
-    <lastmod>2023-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/bkrj/index.html</loc>
-    
-    <lastmod>2023-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/categories/index.html</loc>
-    
-    <lastmod>2023-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/dailyPhoto/index.html</loc>
     
     <lastmod>2023-10-15</lastmod>
     
@@ -431,7 +431,7 @@
   </url>
   
   <url>
-    <loc>https://blog.081113.xyz/tags/%E5%8F%8D%E8%AF%88/</loc>
+    <loc>https://blog.081113.xyz/tags/%E5%BD%B1%E8%A7%86/</loc>
     <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
