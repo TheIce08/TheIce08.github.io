@@ -490,6 +490,1430 @@ More info: Deployment
       </categories>
   </entry>
   <entry>
+    <title>Tag Plugins</title>
+    <url>/posts/d50a.html</url>
+    <content><![CDATA[转自Anzhiyu主题文档
+
+
+段落文本 p标签语法配置参数样式预览示例源码&#123;% p 样式参数(参数以空格划分), 文本内容 %&#125;
+字体: logo, code
+颜色: red,yellow,green,cyan,blue,gray
+大小: small, h4, h3, h2, h1, large, huge, ultra
+对齐方向: left, center, right
+
+彩色文字在一段话中方便插入各种颜色的标签，包括：红色、黄色、绿色、青色、蓝色、灰色。
+超大号文字文档「开始」页面中的标题部分就是超大号文字。Volantis
+A Wonderful Theme for Hexo
+- 彩色文字  在一段话中方便插入各种颜色的标签，包括：&#123;% p red, 红色 %&#125;、&#123;% p yellow, 黄色 %&#125;、&#123;% p green, 绿色 %&#125;、&#123;% p cyan, 青色 %&#125;、&#123;% p blue, 蓝色 %&#125;、&#123;% p gray, 灰色 %&#125;。- 超大号文字  文档「开始」页面中的标题部分就是超大号文字。  &#123;% p center logo large, Volantis %&#125;  &#123;% p center small, A Wonderful Theme for Hexo %&#125;
+
+行内文本 span标签语法配置参数样式预览示例源码&#123;% span 样式参数(参数以空格划分), 文本内容 %&#125;
+字体: logo, code
+颜色: red,yellow,green,cyan,blue,gray
+大小: small, h4, h3, h2, h1, large, huge, ultra
+对齐方向: left, center, right
+
+彩色文字在一段话中方便插入各种颜色的标签，包括：红色、黄色、绿色、青色、蓝色、灰色。
+超大号文字文档「开始」页面中的标题部分就是超大号文字。VolantisA Wonderful Theme for Hexo
+- 彩色文字  在一段话中方便插入各种颜色的标签，包括：&#123;% span red, 红色 %&#125;、&#123;% span yellow, 黄色 %&#125;、&#123;% span green, 绿色 %&#125;、&#123;% span cyan, 青色 %&#125;、&#123;% span blue, 蓝色 %&#125;、&#123;% span gray, 灰色 %&#125;。- 超大号文字  文档「开始」页面中的标题部分就是超大号文字。  &#123;% span center logo large, Volantis %&#125;  &#123;% span center small, A Wonderful Theme for Hexo %&#125;
+
+行内文本样式 text标签语法样式预览示例源码&#123;% u 文本内容 %&#125;&#123;% emp 文本内容 %&#125;&#123;% wavy 文本内容 %&#125;&#123;% del 文本内容 %&#125;&#123;% kbd 文本内容 %&#125;&#123;% psw 文本内容 %&#125;
+带 下划线 的文本
+带 着重号 的文本
+带 波浪线 的文本
+带 删除线 的文本
+键盘样式的文本 command + D
+密码样式的文本：这里没有验证码
+1. 带 &#123;% u 下划线 %&#125; 的文本2. 带 &#123;% emp 着重号 %&#125; 的文本3. 带 &#123;% wavy 波浪线 %&#125; 的文本4. 带 &#123;% del 删除线 %&#125; 的文本5. 键盘样式的文本 &#123;% kbd command %&#125; + &#123;% kbd D %&#125;6. 密码样式的文本：&#123;% psw 这里没有验证码 %&#125;
+
+分栏 tab分栏支持内置阿里图标，如果开启了 fontawesome可以使用 fontawesome 的图标，否则只能使用默内置阿里图标
+
+
+标签语法配置参数样式预览示例源码&#123;% tabs Unique name, [index] %&#125;&lt;!-- tab [Tab caption] [@icon] --&gt;Any content (support inline tags too).&lt;!-- endtab --&gt;&#123;% endtabs %&#125;
+Unique name :
+选项卡块标签的唯一名称，不带逗号。
+将在#id 中用作每个标签及其索引号的前缀。
+如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。
+仅当前帖子&#x2F;页面的 URL 必须是唯一的！
+
+
+[index]:
+活动选项卡的索引号。
+如果未指定，将选择第一个标签（1）。
+如果 index 为-1，则不会选择任何选项卡。
+可选参数。
+
+
+[Tab caption]:
+当前选项卡的标题。
+如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。
+如果未指定标题，但指定了图标，则标题将为空。
+可选参数。
+
+
+[@icon]: - FontAwesome 图标名称（全名，看起来像“ fas fa-font”） - 可以指定带空格或不带空格； - 例如’Tab caption @icon’ 和 ‘Tab caption@icon’. - 可选参数。
+Demo 1 - 预设选择第一个【默认】
+
+
+test1 1test1 2test1 3This is Tab 1.This is Tab 2.This is Tab 3.
+
+Demo 2 - 预设选择 tabs
+
+
+test2 1test2 2test2 3This is Tab 1.This is Tab 2.This is Tab 3.
+
+Demo 3 - 没有预设值
+
+
+test3 1test3 2test3 3This is Tab 1.This is Tab 2.This is Tab 3.
+
+Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+
+
+第一个Tab炸弹tab 名字为第一个 Tab只有图标 没有 Tab 名字名字+iconDemo 1 - 预设选择第一个【默认】
+
+
+&#123;% tabs test1 %&#125;&lt;!-- tab --&gt;**This is Tab 1.**&lt;!-- endtab --&gt;&lt;!-- tab --&gt;**This is Tab 2.**&lt;!-- endtab --&gt;&lt;!-- tab --&gt;**This is Tab 3.**&lt;!-- endtab --&gt;&#123;% endtabs %&#125;
+
+Demo 2 - 预设选择 tabs
+
+
+&#123;% tabs test2, 3 %&#125;&lt;!-- tab --&gt;**This is Tab 1.**&lt;!-- endtab --&gt;&lt;!-- tab --&gt;**This is Tab 2.**&lt;!-- endtab --&gt;&lt;!-- tab --&gt;**This is Tab 3.**&lt;!-- endtab --&gt;&#123;% endtabs %&#125;
+
+Demo 3 - 没有预设值
+
+
+&#123;% tabs test3, -1 %&#125;&lt;!-- tab --&gt;**This is Tab 1.**&lt;!-- endtab --&gt;&lt;!-- tab --&gt;**This is Tab 2.**&lt;!-- endtab --&gt;&lt;!-- tab --&gt;**This is Tab 3.**&lt;!-- endtab --&gt;&#123;% endtabs %&#125;
+
+Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+
+
+&#123;% tabs test4 %&#125;&lt;!-- tab 第一个Tab --&gt;**tab 名字为第一个 Tab**&lt;!-- endtab --&gt;&lt;!-- tab @fab fa-apple-pay --&gt;**只有图标 没有 Tab 名字**&lt;!-- endtab --&gt;&lt;!-- tab 炸弹@fas fa-bomb --&gt;**名字+icon**&lt;!-- endtab --&gt;&#123;% endtabs %&#125;
+
+按钮 btns标签语法参数配置样式预览示例源码&#123;% btns 样式参数 %&#125;&#123;% cell 标题, 链接, 图片或者图标 %&#125;&#123;% cell 标题, 链接, 图片或者图标 %&#125;&#123;% endbtns %&#125;
+圆角样式：rounded, circle
+增加文字样式：可以在容器内增加 &lt;b&gt;标题&lt;/b&gt; 和 &lt;p&gt;描述文字&lt;/p&gt;
+布局方式：默认为自动宽度，适合视野内只有一两个的情况。
+
+
+
+
+参数
+含义
+
+
+
+wide
+宽一点的按钮
+
+
+fill
+填充布局，自动铺满至少一行，多了会换行
+
+
+center
+居中，按钮之间是固定间距
+
+
+around
+居中分散
+
+
+grid2
+等宽最多 2 列，屏幕变窄会适当减少列数
+
+
+grid3
+等宽最多 3 列，屏幕变窄会适当减少列数
+
+
+grid4
+等宽最多 4 列，屏幕变窄会适当减少列数
+
+
+grid5
+等宽最多 5 列，屏幕变窄会适当减少列数
+
+
+如果需要显示类似「团队成员」之类的一组含有头像的链接：
+
+
+            xaoxuu
+xaoxuu
+xaoxuu
+xaoxuu
+xaoxuu
+          
+
+
+或者含有图标的按钮：
+
+
+            下载源码
+查看文档
+          
+
+
+圆形图标 + 标题 + 描述 + 图片 + 网格 5 列 + 居中
+
+
+            
+
+心率管家
+专业版
+
+
+
+
+心率管家
+免费版
+
+
+          
+如果需要显示类似「团队成员」之类的一组含有头像的链接：
+
+&#123;% btns circle grid5 %&#125;&#123;% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %&#125;&#123;% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %&#125;&#123;% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %&#125;&#123;% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %&#125;&#123;% cell xaoxuu, https://xaoxuu.com, https://bu.dusays.com/2023/06/01/64787e6a5816d.png %&#125;&#123;% endbtns %&#125;
+
+
+或者含有图标的按钮：
+
+&#123;% btns rounded grid5 %&#125;&#123;% cell 下载源码, /, anzhiyufont anzhiyu-icon-bolt %&#125;&#123;% cell 查看文档, /, anzhiyufont anzhiyu-icon-book %&#125;&#123;% endbtns %&#125;
+
+
+圆形图标 + 标题 + 描述 + 图片 + 网格 5 列 + 居中
+
+&#123;% btns circle center grid5 %&#125;&lt;a href=&#x27;https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1&#x27; class=&quot;no-text-decoration&quot;&gt;&lt;i class=&#x27;anzhiyufont anzhiyu-icon-heartbeat&#x27;&gt;&lt;/i&gt;&lt;b&gt;心率管家&lt;/b&gt;&#123;% p red, 专业版 %&#125;&lt;img src=&#x27;https://bu.dusays.com/2023/06/01/64787e2a1347c.png&#x27;&gt;&lt;/a&gt;&lt;a href=&#x27;https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1&#x27; class=&quot;no-text-decoration&quot;&gt;&lt;i class=&#x27;anzhiyufont anzhiyu-icon-heartbeat&#x27;&gt;&lt;/i&gt;&lt;b&gt;心率管家&lt;/b&gt;&#123;% p green, 免费版 %&#125;&lt;img src=&#x27;https://bu.dusays.com/2023/06/01/64787e515e261.png&#x27;&gt;&lt;/a&gt;&#123;% endbtns %&#125;
+
+按钮 btn标签语法参数配置样式预览示例源码&#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&#125;[url] : 链接[text] : 按钮文字[icon] : [可选] 图标[color] : [可选] 按钮背景顔色(默认 style 时）按钮字体和边框顔色(outline 时)default/blue/pink/red/purple/orange/green[style] : [可选] 按钮样式 默认实心outline/留空[layout] : [可选] 按钮佈局 默认为 lineblock/留空[position] : [可选] 按钮位置 前提是设置了 layout 为 block 默认为左边center/right/留空[size] : [可选] 按钮大小larger/留空
+
+
+参数
+含义
+
+
+
+url
+链接
+
+
+text
+按钮文字
+
+
+icon
+[可选] 图标，如果开启了 fontawesome可以使用 fontawesome 的图标，否则只能使用默内置图标
+
+
+color
+[可选] 按钮背景顔色(默认 style 时）按钮字体和边框顔色(outline 时)default&#x2F;blue&#x2F;pink&#x2F;red&#x2F;purple&#x2F;orange&#x2F;green
+
+
+style
+[可选] 按钮样式 默认实心数，outline&#x2F;留空
+
+
+layout
+[可选] 按钮佈局 默认为 line block&#x2F;留空
+
+
+position
+[可选] 按钮位置 前提是设置了 layout 为 block 默认为左边 center&#x2F;right&#x2F;留空数
+
+
+size
+[可选] 按钮大小 larger&#x2F;留空
+
+
+一组按钮
+
+This is my website, click the button AnZhiYuThis is my website, click the button AnZhiYuThis is my website, click the button AnZhiYuThis is my website, click the button AnZhiYuThis is my website, click the button AnZhiYu
+
+调整位置&#x2F;大小
+
+AnZhiYuAnZhiYuAnZhiYu
+
+more than one button in center
+
+
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+
+
+
+居中按钮
+
+
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+AnZhiYu
+
+一组按钮
+
+This is my website, click the button &#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu %&#125;This is my website, click the button &#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right %&#125;This is my website, click the button &#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,,outline %&#125;This is my website, click the button &#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline %&#125;This is my website, click the button &#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %&#125;
+
+
+调整位置&#x2F;大小
+
+&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block center larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block right outline larger %&#125;
+
+
+more than one button in center
+
+&lt;span&gt;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,blue larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,pink larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,red larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,purple larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,orange larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,green larger %&#125;&lt;/span&gt;
+
+
+居中按钮
+
+&lt;div class=&quot;btn-center&quot;&gt;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline blue larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline pink larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline red larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline purple larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline orange larger %&#125;&#123;% btn &#x27;https://anheyu.com/&#x27;,AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline green larger %&#125;&lt;/div&gt;
+
+网站卡片 sites标签语法样式预览示例源码&#123;% sitegroup %&#125;&#123;% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %&#125;&#123;% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %&#125;&#123;% endsitegroup %&#125;xaoxuu
+Colsrch
+Linhk1606&#123;% sitegroup %&#125;&#123;% site xaoxuu, url=https://xaoxuu.com, screenshot=https://bu.dusays.com/2023/06/01/6478965ce6557.webp, avatar=https://cdn1.tianli0.top/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %&#125;&#123;% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn1.tianli0.top/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %&#125;&#123;% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://bu.dusays.com/2023/06/01/6478963584621.png, avatar=https://bu.dusays.com/2023/06/01/6478968743368.png, description=这是一段关于这个网站的描述文字 %&#125;&#123;% endsitegroup %&#125;
+
+单张图片 image标签语法参数配置样式预览示例源码&#123;% image 链接, width=宽度（可选）, height=高度（可选）, alt=描述（可选）, bg=占位颜色（可选） %&#125;
+图片宽度高度：width&#x3D;300px, height&#x3D;32px
+图片描述：alt&#x3D;图片描述（butterfly 需要在主题配置文件中开启图片描述）
+占位背景色：bg&#x3D;#f2f2f2
+
+添加描述：
+
+每天下课回宿舍的路，没有什么故事。
+
+
+指定宽度：
+
+
+
+
+指定宽度并添加描述：
+
+每天下课回宿舍的路，没有什么故事。
+
+
+设置占位背景色：
+
+优化不同宽度浏览的观感
+添加描述：
+
+&#123;% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, alt=每天下课回宿舍的路，没有什么故事。 %&#125;
+
+
+指定宽度：
+
+&#123;% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px %&#125;
+
+
+指定宽度并添加描述：
+
+&#123;% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %&#125;
+
+
+设置占位背景色：
+
+&#123;% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %&#125;
+
+inlineImg 行内图片标签语法参数配置样式预览示例源码&#123;% inlineImg [src] [height] %&#125;[src] : 图片链接[height] ： 图片高度限制【可选】
+
+
+参数
+含义
+
+
+
+src
+图片链接
+
+
+height
+图片高度限制【可选】
+
+你看我长得漂亮不
+
+我觉得很漂亮 你看我长得漂亮不![](https://i.loli.net/2021/03/19/2P6ivUGsdaEXSFI.png)我觉得很漂亮 &#123;% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png 150px %&#125;
+
+行内图片 inlineimage标签语法参数配置样式预览示例源码&#123;% inlineimage 图片链接, height=高度（可选） %&#125;
+高度：height&#x3D;20px
+这是  一段话。
+这又是  一段话。这是 &#123;% inlineimage https://bu.dusays.com/2023/06/01/647895232e5d5.webp %&#125; 一段话。这又是 &#123;% inlineimage https://bu.dusays.com/2022/05/19/6285328a83ca7.gif, height=40px %&#125; 一段话。
+
+label 标签标签语法参数配置样式预览示例源码&#123;% label text color %&#125;
+
+
+参数
+含义
+
+
+
+text
+文字
+
+
+color
+【可选】背景颜色，默认为 default，default&#x2F;blue&#x2F;pink&#x2F;red&#x2F;purple&#x2F;orange&#x2F;green
+
+臣亮言：先帝 创业未半，而中道崩殂 。今天下三分，益州疲敝 ，此诚危急存亡之秋 也！然侍衞之臣，不懈于内；忠志之士 ，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。宫中、府中，俱为一体；陟罚臧否，不宜异同。若有作奸 、犯科 ，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。臣亮言：&#123;% label 先帝 %&#125;创业未半，而&#123;% label 中道崩殂 blue %&#125;。今天下三分，&#123;% label 益州疲敝 pink %&#125;，此诚&#123;% label 危急存亡之秋 red %&#125;也！然侍衞之臣，不懈于内；&#123;% label 忠志之士 purple %&#125;，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。宫中、府中，俱为一体；陟罚臧否，不宜异同。若有&#123;% label 作奸 orange %&#125;、&#123;% label 犯科 green %&#125;，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。
+
+timeline标签语法参数配置样式预览示例源码&#123;% timeline title,color %&#125;&lt;!-- timeline title --&gt;xxxxx&lt;!-- endtimeline --&gt;&lt;!-- timeline title --&gt;xxxxx&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+
+参数
+含义
+
+
+
+title
+标题&#x2F;时间线
+
+
+color
+timeline 颜色，default(留空) &#x2F; blue &#x2F; pink &#x2F; red &#x2F; purple &#x2F; orange &#x2F; green
+
+
+默认颜色
+2022
+01-02
+这是测试页面
+
+
+blue
+2022
+01-02
+这是测试页面
+
+
+pink
+2022
+01-02
+这是测试页面
+
+
+red
+2022
+01-02
+这是测试页面
+
+
+purple
+2022
+01-02
+这是测试页面
+
+
+orange
+2022
+01-02
+这是测试页面
+
+
+green
+2022
+01-02
+这是测试页面
+
+
+默认颜色
+
+&#123;% timeline 2022 %&#125;&lt;!-- timeline 01-02 --&gt;这是测试页面&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+
+blue
+
+&#123;% timeline 2022,blue %&#125;&lt;!-- timeline 01-02 --&gt;这是测试页面&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+
+pink
+
+&#123;% timeline 2022,pink %&#125;&lt;!-- timeline 01-02 --&gt;这是测试页面&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+
+red
+
+&#123;% timeline 2022,red %&#125;&lt;!-- timeline 01-02 --&gt;这是测试页面&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+
+purple
+
+&#123;% timeline 2022,purple %&#125;&lt;!-- timeline 01-02 --&gt;这是测试页面&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+
+orange
+
+&#123;% timeline 2022,orange %&#125;&lt;!-- timeline 01-02 --&gt;这是测试页面&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+
+green
+
+&#123;% timeline 2022,green %&#125;&lt;!-- timeline 01-02 --&gt;这是测试页面&lt;!-- endtimeline --&gt;&#123;% endtimeline %&#125;
+
+flink 友链标签可在任何界面插入类似友情链接列表效果，内容格式与友情链接界面一样，支持 yml 格式,注意yml数据具有格式要求，请注意格式对齐，防止被编辑器格式化导致格式错误从而报错。
+
+
+标签语法参数配置样式预览示例源码&#123;% flink %&#125;xxxxxx&#123;% endflink %&#125;
+
+
+参数
+含义
+
+
+
+class_name
+h2标题
+
+
+flink_style
+【可选】友链样式，默认为 flexcard，flexcard&#x2F;anzhiyu
+
+
+link_list
+【可选】友链样式，默认为 flexcard，flexcard&#x2F;anzhiyu
+
+推荐博客 
+              
+                
+                    
+                
+                
+                  
+                  安知鱼
+                
+              网站值得推荐的网站 
+            
+              
+                
+                  
+                
+                
+                  Youtube
+                  视频网站
+                
+              
+            
+            
+              
+                
+                  
+                
+                
+                  Weibo
+                  中国最大社交分享平台
+                
+              
+            
+            
+              
+                
+                  
+                
+                
+                  Twitter
+                  社交分享平台
+                
+              
+            &#123;% flink %&#125;- class_name: 推荐博客  flink_style: flexcard  link_list:    - name: 安知鱼      link: https://anheyu.com/      avatar: https://img02.anheyu.com/adminuploads/1/2022/09/15/63232b7d91d22.jpg      descr: 生活明朗，万物可爱      siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anheyu.com.jpg- class_name: 网站  class_desc: 值得推荐的网站  flink_style: anzhiyu  link_list:    - name: Youtube      link: https://www.youtube.com/      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png      descr: 视频网站    - name: Weibo      link: https://www.weibo.com/      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png      descr: 中国最大社交分享平台    - name: Twitter      link: https://twitter.com/      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png      descr: 社交分享平台&#123;% endflink %&#125;
+
+mermaid 图使用mermaid标签可以绘制Flowchart（流程图）、Sequence diagram（时序图 ）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看mermaid文档
+
+
+
+修改 主题配置文件
+# mermaid# see https://github.com/mermaid-js/mermaidmermaid:  enable: true  # built-in themes: default/forest/dark/neutral  theme:    light: default    dark: dark
+
+标签语法样式预览示例源码&#123;% mermaid %&#125;内容&#123;% endmermaid %&#125;&#123;% mermaid %&#125;pie    title Key elements in Product X    &quot;Calcium&quot; : 42.96    &quot;Potassium&quot; : 50.05    &quot;Magnesium&quot; : 10.01    &quot;Iron&quot; :  5&#123;% endmermaid %&#125;
+
+复选列表 checkbox标签语法配置参数样式预览示例源码&#123;% checkbox 样式参数（可选）, 文本（支持简单md） %&#125;
+样式: plus, minus, times
+颜色: red,yellow,green,cyan,blue,gray
+选中状态: checked
+
+            纯文本测试
+            
+   
+            支持简单的 markdown 语法
+            
+   
+            支持自定义颜色
+            
+   
+            绿色 + 默认选中
+            
+   
+            黄色 + 默认选中
+            
+   
+            青色 + 默认选中
+            
+   
+            蓝色 + 默认选中
+            
+   
+            增加
+            
+   
+            减少
+            
+   
+            叉
+            &#123;% checkbox 纯文本测试 %&#125;&#123;% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %&#125;&#123;% checkbox red, 支持自定义颜色 %&#125;&#123;% checkbox green checked, 绿色 + 默认选中 %&#125;&#123;% checkbox yellow checked, 黄色 + 默认选中 %&#125;&#123;% checkbox cyan checked, 青色 + 默认选中 %&#125;&#123;% checkbox blue checked, 蓝色 + 默认选中 %&#125;&#123;% checkbox plus green checked, 增加 %&#125;&#123;% checkbox minus yellow checked, 减少 %&#125;&#123;% checkbox times red checked, 叉 %&#125;
+
+dogeplayer 多吉云播放器快捷引入多吉云视频
+
+
+标签语法参数配置样式预览示例源码&#123;% dogeplayer 4945 ebb742fd1f0b5a7b %&#125;获取userId与vcode
+
+
+
+
+参数
+含义
+
+
+
+userId
+多吉云userId
+
+
+vcode
+视频vcode
+
+&#123;% dogeplayer 4945 ebb742fd1f0b5a7b %&#125;
+
+折叠框 folding折叠框folding
+
+
+标签语法配置参数样式预览示例源码&#123;% folding 参数（可选）, 标题 %&#125;![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)&#123;% endfolding %&#125;
+颜色：blue, cyan, green, yellow, red
+状态：状态填写 open 代表默认打开。
+ 查看图片测试 
+              
+              
+              
+            
+
+ 查看默认打开的折叠框 
+              
+              这是一个默认打开的折叠框。
+              
+            
+
+ 查看代码测试 
+              
+              ![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+              
+            
+
+ 查看列表测试 
+              
+              hahahehe
+              
+            
+
+ 查看嵌套测试 
+              
+               查看嵌套测试2                              查看嵌套测试3                             hahaha                                                     
+              
+            &#123;% folding 查看图片测试 %&#125;![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)&#123;% endfolding %&#125;&#123;% folding cyan open, 查看默认打开的折叠框 %&#125;这是一个默认打开的折叠框。&#123;% endfolding %&#125;&#123;% folding green, 查看代码测试 %&#125;假装这里有代码块（代码块没法嵌套代码块）&#123;% endfolding %&#125;&#123;% folding yellow, 查看列表测试 %&#125;- haha- hehe&#123;% endfolding %&#125;&#123;% folding red, 查看嵌套测试 %&#125;&#123;% folding blue, 查看嵌套测试2 %&#125;&#123;% folding 查看嵌套测试3 %&#125;hahaha &lt;span&gt;&lt;img src=&#x27;https://bu.dusays.com/2023/06/01/64788cd5a356b.png&#x27; style=&#x27;height:24px&#x27;&gt;&lt;/span&gt;&#123;% endfolding %&#125;&#123;% endfolding %&#125;&#123;% endfolding %&#125;
+
+Gallery 相册图库一个图库集合。
+标签语法参数配置样式预览示例源码
+gallerygroup 相册图库
+&lt;div class=&quot;gallery-group-main&quot;&gt;&#123;% galleryGroup name description link img-url %&#125;&#123;% galleryGroup name description link img-url %&#125;&#123;% galleryGroup name description link img-url %&#125;&lt;/div&gt;
+
+gallery 相册
+
+
+本地远程&#123;% gallery %&#125;markdown 图片格式&#123;% endgallery %&#125;&#123;% gallery true,220,10 %&#125;markdown 图片格式&#123;% endgallery %&#125;&#123;% gallery true,,10 %&#125;markdown 图片格式&#123;% endgallery %&#125;
+
+
+
+
+参数名
+释义
+
+
+
+lazyload
+【可选】点击按钮加载更多图片，填写 true&#x2F;false。默认为 false。
+
+
+rowHeight
+【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 220。
+
+
+limit
+【可选】每次加载多少张照片。默认为 10。
+
+&#123;% gallery url,[link],[lazyload],[rowHeight],[limit] %&#125;&#123;% endgallery %&#125;
+
+
+
+
+参数名
+释义
+
+
+
+url
+【必须】 识别词
+
+
+link
+【必须】远程的 json 链接
+
+
+lazyload
+【可选】点击按钮加载更多图片，填写 true&#x2F;false。默认为 false。
+
+
+rowHeight
+【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 220。
+
+
+limit
+【可选】每次加载多少张照片。默认为 10。
+
+
+
+远程链接 Json 的例子
+
+有三个参数，url是必须存在的，alt 和 title 可有，也可没有。
+[  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg&quot;,    &quot;alt&quot;: &quot;IMG_0556.jpg&quot;,    &quot;title&quot;: &quot;这是title&quot;  &#125;,  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg&quot;,    &quot;alt&quot;: &quot;IMG_0472.jpg&quot;  &#125;,  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg&quot;,    &quot;alt&quot;: &quot;&quot;  &#125;,  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg&quot;,    &quot;alt&quot;: &quot;&quot;  &#125;]
+
+
+示例
+
+&#123;% gallery url,https://xxxx.com/sss.json %&#125;&#123;% endgallery %&#125;&#123;% gallery url,https://xxxx.com/sss.json,true,220,10 %&#125;&#123;% endgallery %&#125;&#123;% gallery url,https://xxxx.com/sss.json,true,,10 %&#125;&#123;% endgallery %&#125;
+gallerygroup 相册图库
+
+
+
+参数名
+释义
+
+
+
+name
+图库名字
+
+
+description
+图库描述
+
+
+link
+链接到对应相册的地址
+
+
+img-url
+图库封面
+
+
+
+
+思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、QQ、友链都是不错的选择。
+
+
+
+gallery 相册区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。建议在粘贴时故意使用长短、大小、横竖不一的图片，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）
+
+本地远程&#123;% gallery %&#125;markdown 图片格式&#123;% endgallery %&#125;&#123;% gallery true,220,10 %&#125;markdown 图片格式&#123;% endgallery %&#125;&#123;% gallery true,,10 %&#125;markdown 图片格式&#123;% endgallery %&#125;
+
+
+
+
+参数名
+释义
+
+
+
+lazyload
+【可选】点击按钮加载更多图片，填写 true&#x2F;false。默认为 false。
+
+
+rowHeight
+【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 220。
+
+
+limit
+【可选】每次加载多少张照片。默认为 10。
+
+&#123;% gallery url,[link],[lazyload],[rowHeight],[limit] %&#125;&#123;% endgallery %&#125;
+
+
+
+
+参数名
+释义
+
+
+
+url
+【必须】 识别词
+
+
+link
+【必须】远程的 json 链接
+
+
+lazyload
+【可选】点击按钮加载更多图片，填写 true&#x2F;false。默认为 false。
+
+
+rowHeight
+【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 220。
+
+
+limit
+【可选】每次加载多少张照片。默认为 10。
+
+
+
+远程链接 Json 的例子
+
+有三个参数，url是必须存在的，alt 和 title 可有，也可没有。
+[  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg&quot;,    &quot;alt&quot;: &quot;IMG_0556.jpg&quot;,    &quot;title&quot;: &quot;这是title&quot;  &#125;,  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg&quot;,    &quot;alt&quot;: &quot;IMG_0472.jpg&quot;  &#125;,  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg&quot;,    &quot;alt&quot;: &quot;&quot;  &#125;,  &#123;    &quot;url&quot;: &quot;https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg&quot;,    &quot;alt&quot;: &quot;&quot;  &#125;]
+
+
+示例
+
+&#123;% gallery url,https://xxxx.com/sss.json %&#125;&#123;% endgallery %&#125;&#123;% gallery url,https://xxxx.com/sss.json,true,220,10 %&#125;&#123;% endgallery %&#125;&#123;% gallery url,https://xxxx.com/sss.json,true,,10 %&#125;&#123;% endgallery %&#125;
+gallerygroup 相册图库
+
+
+
+  
+  
+  
+  MC
+  在Rikkaの六花服务器里留下的足迹
+  
+  
+  
+  
+
+  
+  
+  
+  Gundam
+  哦咧哇gundam哒！
+  
+  
+  
+  
+
+  
+  
+  
+  I-am-Akilar
+  某种意义上也算自拍吧
+  
+  
+  
+  
+
+
+
+gallery 相册
+
+
+  
+    [{"url":"https://bu.dusays.com/2023/06/01/647896b15759c.jpg","alt":""},{"url":"https://bu.dusays.com/2023/06/01/647896cabde59.jpg","alt":""},{"url":"https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg","alt":""},{"url":"https://bu.dusays.com/2023/06/01/647896ed810b3.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":""}]
+  
+  加载更多
+  
+  对于很多同学提问的gallerygroup和gallery相册页的链接问题。这里说下我个人的使用习惯。一般使用相册图库的话，可以在导航栏加一个 gallery 的 page(使用指令hexo new page gallery添加)，里面放相册图库作为封面。然后在[Blogroot]/source/gallery/下面建立相应的文件夹，例如若按照这里的示例，若欲使用/gallery/MC/路径访问 MC 相册，则需要新建[Blogroot]/source/gallery/MC/index.md，并在里面填入gallery相册内容。
+注意 ⚠️：本站相册集为单独优化，可参考配置相册页面。
+
+
+
+gallerygroup 相册图库
+&lt;div class=&quot;gallery-group-main&quot;&gt; &#123;% galleryGroup MC 在Rikkaの六花服务器里留下的足迹 &#x27;/wordScenery/&#x27; https://bu.dusays.com/2023/06/01/64788f24d05bd.webp %&#125; &#123;% galleryGroup Gundam 哦咧哇gundam哒！ &#x27;/thousand/&#x27; https://bu.dusays.com/2023/06/01/64788f456fc3d.webp %&#125; &#123;% galleryGroup I-am-Akilar 某种意义上也算自拍吧 &#x27;/wallpaper/&#x27; https://bu.dusays.com/2023/06/01/64788f83e5fa1.webp %&#125;&lt;/div&gt;
+
+gallery 相册
+&#123;% gallery true,,2 %&#125;![](https://bu.dusays.com/2023/06/01/647896b15759c.jpg)![](https://bu.dusays.com/2023/06/01/647896cabde59.jpg)![](https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg)![](https://bu.dusays.com/2023/06/01/647890012b1ec.webp)![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)&#123;% endgallery %&#125;
+
+
+tag-hide如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。请注意，tag-hide内的标签外挂content内都不建议有h1 - h6 等标题。因为Toc会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致Toc的滚动出现异常。
+
+
+inlineBlockToggleinline 在文本里面添加按钮隐藏内容，只限文字
+( content不能包含英文逗号，可用&amp;sbquo;)
+&#123;% hideInline content,display,bg,color %&#125;
+
+content: 文本内容
+
+display: 按钮显示的文字(可选)
+
+bg: 按钮的背景颜色(可选)
+
+color: 按钮文字的颜色(可选)
+
+
+
+Demo
+
+哪个英文字母最酷？ &#123;% hideInline 因为西装裤(C装酷),查看答案,#FF7242,#fff %&#125;门里站着一个人? &#123;% hideInline 闪 %&#125;
+
+哪个英文字母最酷？ 查看答案  因为西装裤(C装酷)
+门里站着一个人? Click  闪block独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等
+( display 不能包含英文逗号，可用&amp;sbquo;)
+&#123;% hideBlock display,bg,color %&#125;content&#123;% endhideBlock %&#125;
+
+
+content: 文本内容
+
+display: 按钮显示的文字(可选)
+
+bg: 按钮的背景颜色(可选)
+
+color: 按钮文字的颜色(可选)
+
+
+
+Demo
+
+查看答案&#123;% hideBlock 查看答案 %&#125;傻子，怎么可能有答案&#123;% endhideBlock %&#125;
+
+查看答案
+查看答案
+    傻子，怎么可能有答案
+如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。
+( display 不能包含英文逗号，可用&amp;sbquo;)
+&#123;% hideToggle display,bg,color %&#125;content&#123;% endhideToggle %&#125;
+
+
+Demo
+
+AnZhiYu主题安装方法在你的博客根目录里
+git clone -b master https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes&#x2F;anzhiyu
+如果想要安装比较新的dev分支，可以
+git clone -b dev https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes&#x2F;anzhiyu
+
+
+
+链接卡片 link标签语法样式预览示例源码&#123;% link 标题, 站点描述, 链接, 图片链接（可选） %&#125;
+    引用站外地址
+    
+        
+          
+        
+        
+            获取网站的Favicon图标并显示在你的网页上
+            owen0o0
+        
+        
+    
+    &#123;% link 获取网站的Favicon图标并显示在你的网页上,owen0o0,https://github.com/owen0o0/getFavicon %&#125;
+
+单选列表 radio标签语法配置参数样式预览示例源码&#123;% radio 样式参数（可选）, 文本（支持简单md） %&#125;
+颜色: red,yellow,green,cyan,blue,gray
+选中状态: checked
+
+            纯文本测试
+            
+   
+            支持简单的 markdown 语法
+            
+   
+            支持自定义颜色
+            
+   
+            绿色
+            
+   
+            黄色
+            
+   
+            青色
+            
+   
+            蓝色
+            &#123;% radio 纯文本测试 %&#125;&#123;% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %&#125;&#123;% radio red, 支持自定义颜色 %&#125;&#123;% radio green, 绿色 %&#125;&#123;% radio yellow, 黄色 %&#125;&#123;% radio cyan, 青色 %&#125;&#123;% radio blue, 蓝色 %&#125;
+
+上标标签 tip主要样式参考自小康的 butterfly 渐变背景标签
+
+
+标签语法配置参数样式预览示例源码&#123;% tip [参数，可选] %&#125;文本内容&#123;% endtip %&#125;
+样式: success,error,warning,bolt,ban,home,sync,cogs,key,bell
+自定义图标: 支持 fontawesome。
+default
+
+info
+
+success
+
+error
+
+warning
+
+bolt
+
+ban
+
+home
+
+sync
+
+cogs
+
+key
+
+bell
+
+自定义 font awesome 图标
+&#123;% tip %&#125;default&#123;% endtip %&#125;&#123;% tip info %&#125;info&#123;% endtip %&#125;&#123;% tip success %&#125;success&#123;% endtip %&#125;&#123;% tip error %&#125;error&#123;% endtip %&#125;&#123;% tip warning %&#125;warning&#123;% endtip %&#125;&#123;% tip bolt %&#125;bolt&#123;% endtip %&#125;&#123;% tip ban %&#125;ban&#123;% endtip %&#125;&#123;% tip home %&#125;home&#123;% endtip %&#125;&#123;% tip sync %&#125;sync&#123;% endtip %&#125;&#123;% tip cogs %&#125;cogs&#123;% endtip %&#125;&#123;% tip key %&#125;key&#123;% endtip %&#125;&#123;% tip bell %&#125;bell&#123;% endtip %&#125;&#123;% tip fa-atom %&#125;自定义 font awesome 图标&#123;% endtip %&#125;
+
+Note (Bootstrap Callout)通用配置语法格式配置参数样式预览示例源码修改主题配置文件
+note:  # Note tag style values:  #  - simple    bs-callout old alert style. Default.  #  - modern    bs-callout new (v2-v3) alert style.  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.  #  - disabled  disable all CSS styles import of note tag.  style: simple  icons: false  border_radius: 3  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).  # Offset also applied to label tag variables. This option can work with disabled note tag.  light_bg_offset: 0
+
+Note标签外挂有两种用法。icons和light_bg_offset只对方法一生效。
+fontawesome图标需开启主题配置文件中icons.fontawesome方法一
+&#123;% note [class] [no-icon] [style] %&#125;Any content (support inline tags too.io).&#123;% endnote %&#125;
+
+方法二
+&#123;% note [color] [icon] [style] %&#125;Any content (support inline tags too.io).&#123;% endnote %&#125;方法一
+
+
+
+参数
+用法
+
+
+
+class
+【可选】标识，不同的标识有不同的配色（ default &#x2F; primary &#x2F; success &#x2F; info &#x2F; warning &#x2F; danger ）
+
+
+no-icon
+【可选】不显示 icon
+
+
+style
+【可选】可以覆盖配置中的 style（simple&#x2F;modern&#x2F;flat&#x2F;disabled）
+
+
+方法二
+
+
+
+参数
+用法
+
+
+
+class
+【可选】标识，不同的标识有不同的配色（ default &#x2F; blue &#x2F; pink &#x2F; red &#x2F; purple &#x2F; orange &#x2F; green ）
+
+
+no-icon
+【可选】可配置自定义 icon (支持 fontawesome 图标和主题内置的阿里图标,fontawesome图标需开启主题配置文件中icons.fontawesome, 也可以配置 no-icon )
+
+
+style
+【可选】可以覆盖配置中的 style（simple&#x2F;modern&#x2F;flat&#x2F;disabled）
+
+方法一
+
+simple样式
+
+默认 提示块标签
+
+default 提示块标签
+
+primary 提示块标签
+
+success 提示块标签
+
+info 提示块标签
+
+warning 提示块标签
+
+danger 提示块标签
+
+
+
+
+modern样式
+
+默认 提示块标签
+
+default 提示块标签
+
+primary 提示块标签
+
+success 提示块标签
+
+info 提示块标签
+
+warning 提示块标签
+
+danger 提示块标签
+
+
+
+
+flat样式
+
+默认 提示块标签
+
+default 提示块标签
+
+primary 提示块标签
+
+success 提示块标签
+
+info 提示块标签
+
+warning 提示块标签
+
+danger 提示块标签
+
+
+
+disabled样式
+
+默认 提示块标签
+
+default 提示块标签
+
+primary 提示块标签
+
+success 提示块标签
+
+info 提示块标签
+
+warning 提示块标签
+
+danger 提示块标签
+
+
+
+no-icon样式
+
+默认 提示块标签
+
+default 提示块标签
+
+primary 提示块标签
+
+success 提示块标签
+
+info 提示块标签
+
+warning 提示块标签
+
+danger 提示块标签
+
+
+方法二
+图标支持 fontawesome 和 主题内置的阿里图标，使用方法为加上对应的类名，fontawesome图标需开启主题配置文件中icons.fontawesome，默认未开启 fontawesome
+
+simple 样式
+
+主题内置阿里图标
+你是刷 Visa 还是 UnionPay
+
+2022 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+你是刷 Visa 还是 UnionPay
+
+2022 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏器
+
+
+
+modern 样式
+
+主题内置阿里图标
+你是刷 Visa 还是 UnionPay
+
+2022 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+
+你是刷 Visa 还是 UnionPay
+
+2021 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+
+
+
+flat 样式
+
+主题内置阿里图标
+你是刷 Visa 还是 UnionPay
+
+2022 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+
+你是刷 Visa 还是 UnionPay
+
+2021 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+
+
+
+disabled 样式
+
+主题内置阿里图标
+你是刷 Visa 还是 UnionPay
+
+2022 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+
+你是刷 Visa 还是 UnionPay
+
+2021 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+
+
+
+no-icon 样式
+
+你是刷 Visa 还是 UnionPay
+
+2021 年快到了….
+
+小心开车 安全至上
+
+这是三片呢？还是四片？
+
+你是刷 Visa 还是 UnionPay
+
+剪刀石头布
+
+前端最讨厌的浏览器
+方法一
+
+simple样式
+
+&#123;% note simple %&#125;默认 提示块标签&#123;% endnote %&#125;&#123;% note default simple %&#125;default 提示块标签&#123;% endnote %&#125;&#123;% note primary simple %&#125;primary 提示块标签&#123;% endnote %&#125;&#123;% note success simple %&#125;success 提示块标签&#123;% endnote %&#125;&#123;% note info simple %&#125;info 提示块标签&#123;% endnote %&#125;&#123;% note warning simple %&#125;warning 提示块标签&#123;% endnote %&#125;&#123;% note danger simple %&#125;danger 提示块标签&#123;% endnote %&#125;
+
+
+modern样式
+
+&#123;% note modern %&#125;默认 提示块标签&#123;% endnote %&#125;&#123;% note default modern %&#125;default 提示块标签&#123;% endnote %&#125;&#123;% note primary modern %&#125;primary 提示块标签&#123;% endnote %&#125;&#123;% note success modern %&#125;success 提示块标签&#123;% endnote %&#125;&#123;% note info modern %&#125;info 提示块标签&#123;% endnote %&#125;&#123;% note warning modern %&#125;warning 提示块标签&#123;% endnote %&#125;&#123;% note danger modern %&#125;danger 提示块标签&#123;% endnote %&#125;
+
+
+flat样式
+
+&#123;% note flat %&#125;默认 提示块标签&#123;% endnote %&#125;&#123;% note default flat %&#125;default 提示块标签&#123;% endnote %&#125;&#123;% note primary flat %&#125;primary 提示块标签&#123;% endnote %&#125;&#123;% note success flat %&#125;success 提示块标签&#123;% endnote %&#125;&#123;% note info flat %&#125;info 提示块标签&#123;% endnote %&#125;&#123;% note warning flat %&#125;warning 提示块标签&#123;% endnote %&#125;&#123;% note danger flat %&#125;danger 提示块标签&#123;% endnote %&#125;
+
+
+disabled样式
+
+&#123;% note disabled %&#125;默认 提示块标签&#123;% endnote %&#125;&#123;% note default disabled %&#125;default 提示块标签&#123;% endnote %&#125;&#123;% note primary disabled %&#125;primary 提示块标签&#123;% endnote %&#125;&#123;% note success disabled %&#125;success 提示块标签&#123;% endnote %&#125;&#123;% note info disabled %&#125;info 提示块标签&#123;% endnote %&#125;&#123;% note warning disabled %&#125;warning 提示块标签&#123;% endnote %&#125;&#123;% note danger disabled %&#125;danger 提示块标签&#123;% endnote %&#125;
+
+
+no-icon样式
+
+&#123;% note no-icon %&#125;默认 提示块标签&#123;% endnote %&#125;&#123;% note default no-icon %&#125;default 提示块标签&#123;% endnote %&#125;&#123;% note primary no-icon %&#125;primary 提示块标签&#123;% endnote %&#125;&#123;% note success no-icon %&#125;success 提示块标签&#123;% endnote %&#125;&#123;% note info no-icon %&#125;info 提示块标签&#123;% endnote %&#125;&#123;% note warning no-icon %&#125;warning 提示块标签&#123;% endnote %&#125;&#123;% note danger no-icon %&#125;danger 提示块标签&#123;% endnote %&#125;
+
+方法二
+图标支持 fontawesome 和 主题内置的阿里图标，使用方法为加上对应的类名，fontawesome图标需开启主题配置文件中icons.fontawesome，默认未开启 fontawesome
+
+simple 样式主题内置阿里图标
+&#123;% note &#x27;anzhiyufont anzhiyu-icon-rocket&#x27; simple %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;anzhiyufont anzhiyu-icon-bullhorn&#x27; simple %&#125;2022 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;anzhiyufont anzhiyu-icon-instagram&#x27; simple %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;anzhiyufont anzhiyu-icon-fan&#x27; simple%&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;anzhiyufont anzhiyu-icon-dengpao&#x27; simple %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;anzhiyufont anzhiyu-icon-sanmingzhi&#x27; simple %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;anzhiyufont anzhiyu-icon-ic_train&#x27; simple %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+
+&#123;% note &#x27;fab fa-cc-visa&#x27; simple %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;fas fa-bullhorn&#x27; simple %&#125;2022 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;fas fa-car-crash&#x27; simple %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;icon-fan&#x27; simple%&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;fas fa-battery-half&#x27; simple %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;far fa-hand-scissors&#x27; simple %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;fab fa-internet-explorer&#x27; simple %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+modern 样式主题内置阿里图标
+&#123;% note &#x27;anzhiyufont anzhiyu-icon-rocket&#x27; modern %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;anzhiyufont anzhiyu-icon-bullhorn&#x27; modern %&#125;2022 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;anzhiyufont anzhiyu-icon-instagram&#x27; modern %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;anzhiyufont anzhiyu-icon-fan&#x27; modern%&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;anzhiyufont anzhiyu-icon-dengpao&#x27; modern %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;anzhiyufont anzhiyu-icon-sanmingzhi&#x27; modern %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;anzhiyufont anzhiyu-icon-ic_train&#x27; modern %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+
+&#123;% note &#x27;fab fa-cc-visa&#x27; modern %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;fas fa-bullhorn&#x27; modern %&#125;2021 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;fas fa-car-crash&#x27; modern %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;icon-fan&#x27; modern%&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;fas fa-battery-half&#x27; modern %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;far fa-hand-scissors&#x27; modern %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;fab fa-internet-explorer&#x27; modern %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+flat 样式主题内置阿里图标
+&#123;% note &#x27;anzhiyufont anzhiyu-icon-rocket&#x27; flat %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;anzhiyufont anzhiyu-icon-bullhorn&#x27; flat %&#125;2022 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;anzhiyufont anzhiyu-icon-instagram&#x27; flat %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;anzhiyufont anzhiyu-icon-fan&#x27; flat%&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;anzhiyufont anzhiyu-icon-dengpao&#x27; flat %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;anzhiyufont anzhiyu-icon-sanmingzhi&#x27; flat %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;anzhiyufont anzhiyu-icon-ic_train&#x27; flat %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+
+&#123;% note &#x27;fab fa-cc-visa&#x27; flat %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;fas fa-bullhorn&#x27; flat %&#125;2021 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;fas fa-car-crash&#x27; flat %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;icon-fan&#x27; flat%&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;fas fa-battery-half&#x27; flat %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;far fa-hand-scissors&#x27; flat %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;fab fa-internet-explorer&#x27; flat %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+disabled 样式主题内置阿里图标
+&#123;% note &#x27;anzhiyufont anzhiyu-icon-rocket&#x27; disabled %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;anzhiyufont anzhiyu-icon-bullhorn&#x27; disabled %&#125;2022 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;anzhiyufont anzhiyu-icon-instagram&#x27; disabled %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;anzhiyufont anzhiyu-icon-fan&#x27; disabled%&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;anzhiyufont anzhiyu-icon-dengpao&#x27; disabled %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;anzhiyufont anzhiyu-icon-sanmingzhi&#x27; disabled %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;anzhiyufont anzhiyu-icon-ic_train&#x27; disabled %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+fontawesome 图标，开启主题配置文件中的icons.fontawesome为true后可见
+
+&#123;% note &#x27;fab fa-cc-visa&#x27; disabled %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue &#x27;fas fa-bullhorn&#x27; disabled %&#125;2021 年快到了....&#123;% endnote %&#125;&#123;% note pink &#x27;fas fa-car-crash&#x27; disabled %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red &#x27;icon-fan&#x27; disabled %&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange &#x27;fas fa-battery-half&#x27; disabled %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple &#x27;far fa-hand-scissors&#x27; disabled %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green &#x27;fab fa-internet-explorer&#x27; disabled %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+no-icon 样式
+&#123;% note no-icon %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note blue no-icon %&#125;2021 年快到了....&#123;% endnote %&#125;&#123;% note pink no-icon %&#125;小心开车 安全至上&#123;% endnote %&#125;&#123;% note red no-icon %&#125;这是三片呢？还是四片？&#123;% endnote %&#125;&#123;% note orange no-icon %&#125;你是刷 Visa 还是 UnionPay&#123;% endnote %&#125;&#123;% note purple no-icon %&#125;剪刀石头布&#123;% endnote %&#125;&#123;% note green no-icon %&#125;前端最讨厌的浏览器&#123;% endnote %&#125;
+
+
+音频 audio标签语法样式预览示例源码&#123;% audio 音频链接 %&#125;Your browser does not support the audio tag.&#123;% audio https://npm.elemecdn.com/anzhiyu-music@1.0.4/%E9%9D%92%E8%8A%B1%E7%93%B7/%E9%9D%92%E8%8A%B1%E7%93%B7.mp3 %&#125;
+
+视频 video标签语法参数配置样式预览示例源码&#123;% video 视频链接 %&#125;
+对其方向：left, center, right
+列数：逗号后面直接写列数，支持 1 ～ 4 列。
+
+100%宽度
+
+
+
+50%宽度
+
+
+
+25%宽度
+
+
+100%宽度
+
+&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;
+
+
+50%宽度
+
+&#123;% videos, 2 %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% endvideos %&#125;
+
+
+25%宽度
+
+&#123;% videos, 4 %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %&#125;&#123;% endvideos %&#125;
+]]></content>
+      <tags>
+        <tag>Tag Plugins</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用CDN加速网站静态资源</title>
+    <url>/posts/56621.html</url>
+    <content><![CDATA[
+
+什么是CDN？CDN英文全称Content Delivery Network，中文翻译即为内容分发网络。它是建立并覆盖在承载网之上，由分布在不同区域的边缘节点服务器群组成的分布式网络。简而言之就是，IDC在世界各地都有很多很多的服务器，每一个服务器我们称之为节点，很多的节点组成了内容云分发网络。  
+为什么我们需要CDN？
+CDN将源站的资源缓存到位于全国各地的CDN节点上，用户请求资源时，就近返回节点上缓存的资源，而不需要每个用户的请求都回您的源站获取，避免网络拥塞、分担源站压力，保证用户访问资源的速度和体验。  
+大量静态网站站长将网站部署在类似Vercel,Github,Gitree上，但是这些静态托管平台的访问效果在国内非常不佳，面临这些问题：长期无法访问；定期抽风；加载速度过慢等。  
+CDN处于用户和源站的中间位置，因此您可以在CDN中配置访问的各项选项，达到过滤、分流等效果。  
+在用户与源站之间加了一层CDN，用户先访问CDN的节点，CDN节点再去源站拿取内容，当用户第二次访问的时候就会直接返回节点上缓存的内容，由于节点离用户近，所以用户拿到资源的速度就会缩短，访问也就变快了。
+
+本站使用的是由StarWaf提供的cdn加速 (无需备案即可使用)。  
+注册IDC服务商账号并完成实名认证登录成功进入信息填写页面后，选择国家，随意填写公司名称，勾选接受条款后，点击下一步。来到CDN服务选择界面，根据您的需求选择购买CDN服务 进入配置页面
+配置CDN进入我的网址，配置您的域名和源站IP在新增网站处填写你的信息：  
+
+域名、源IP(可以使用cmd的命令ping查询)  
+端口(https&#x3D;443，http&#x3D;80)
+
+将域名解析到CNAME在详情页面获取到CDN解析的CNAME前往域名注册商网址进行DNS解析这里就不配图了等待一分钟 左右，DNS解析生效。
+配置证书和攻击防护（CC）证书配置（SSL）
+点击CDN证书管理,新增证书将秘钥和内容分别填进去(不要弄混位置了密钥对密钥，内容对内容)，用别的方法申请下来的证书也可以看个人情况。如果你没有证书 那么可以到本站内搜索免费SSL证书注册教程  
+回到网站管理，点击编辑按钮.填写HTTP监听端口修改:80,填写HTTPS网站证书ID(先前在证书管理里面，不要搞错了).如果网站没有设https填写关闭.    
+填写HTTPS跳转端口:443,修改回源协议:跟随协议，这里每一步都需要点击一次修改等待刷新成功后继续操作，其他的选项看个人情况是否开启.
+
+攻击防护和IP黑白名单
+在CDN控制台的CC防护中选择配置你需要的防护模式  
+在控制台的安全设置中可以找到以下屏蔽控制
+
+注意事项
+如果使用了强制开启https和协议跟随就是走https,协议跟随是给兼顾https和http兼容的客户用的
+多重定向的情况可能是选择的http回源的同时源站开启了强制https，这里的解决方案是关闭https或者回源选https
+
+
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>传递优化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>冰块_刷屏器</title>
     <url>/posts/17335.html</url>
     <content><![CDATA[正文介绍功能多 效果达标
