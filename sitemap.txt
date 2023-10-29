@@ -1,4 +1,5 @@
 https://blog.081113.xyz/posts/d50a.html
+https://blog.081113.xyz/posts/d50v.html
 https://blog.081113.xyz/posts/35430.html
 https://blog.081113.xyz/about/index.html
 https://blog.081113.xyz/album/index.html
@@ -52,6 +53,7 @@ https://blog.081113.xyz/tags/Butterfly/
 https://blog.081113.xyz/tags/Tag-Plugins/
 https://blog.081113.xyz/tags/Hexo/
 https://blog.081113.xyz/tags/%E4%BC%A0%E9%80%92%E4%BC%98%E5%8C%96/
+https://blog.081113.xyz/tags/%E7%AB%99%E7%82%B9%E6%97%A5%E5%BF%97/
 https://blog.081113.xyz/tags/%E8%90%8C%E7%89%A9/
 https://blog.081113.xyz/tags/%E5%BD%B1%E8%A7%86/
 https://blog.081113.xyz/tags/%E6%96%B0%E5%86%A0/
