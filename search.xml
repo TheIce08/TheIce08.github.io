@@ -1969,6 +1969,8 @@ Vercel阻断恢复 域名正常解析
 江苏地区访问仍受运营商阻断江苏移动、电信仍然无法正常访问江苏联通恢复
 10-29
 江苏地区访问仍受运营商阻断江苏移动、电信仍然无法正常访问初步排查可能为系统误判或CDN未备案
+11-8
+江苏地区访问仍受运营商阻断CDN备案下发
 
 
 
@@ -2498,6 +2500,15 @@ git config --global --add safe.directory &quot;*&quot;;
       <categories>
         <category>生活</category>
       </categories>
+  </entry>
+  <entry>
+    <title>劫持公告</title>
+    <url>/posts/d50v.html</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>站点日志</tag>
+      </tags>
   </entry>
   <entry>
     <title>十大高清壁纸站</title>
