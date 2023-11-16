@@ -21,10 +21,11 @@
 
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>生活日常</category>
       </categories>
       <tags>
         <tag>birthday</tag>
+        <tag>小程序</tag>
       </tags>
   </entry>
   <entry>
@@ -91,10 +92,11 @@ PAT	    Github 个人访问密钥，需要具有 workflow 权限USER	E5 管理�
 在此奉劝各位朋友 生命只有一次，保护自己，关爱他人！
 ]]></content>
       <categories>
-        <category>校园</category>
+        <category>时事消息</category>
       </categories>
       <tags>
-        <tag>新闻</tag>
+        <tag>日常</tag>
+        <tag>热门</tag>
       </tags>
   </entry>
   <entry>
@@ -486,8 +488,12 @@ More info: Deployment
 决赛：2022年12月18日
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>聚焦时事</category>
       </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>热门</tag>
+      </tags>
   </entry>
   <entry>
     <title>Tag Plugins</title>
@@ -1886,7 +1892,6 @@ no-icon 样式
     <title>使用CDN加速网站静态资源</title>
     <url>/posts/56621.html</url>
     <content><![CDATA[
-
 什么是CDN？CDN英文全称Content Delivery Network，中文翻译即为内容分发网络。它是建立并覆盖在承载网之上，由分布在不同区域的边缘节点服务器群组成的分布式网络。简而言之就是，IDC在世界各地都有很多很多的服务器，每一个服务器我们称之为节点，很多的节点组成了内容云分发网络。  
 为什么我们需要CDN？
 CDN将源站的资源缓存到位于全国各地的CDN节点上，用户请求资源时，就近返回节点上缓存的资源，而不需要每个用户的请求都回您的源站获取，避免网络拥塞、分担源站压力，保证用户访问资源的速度和体验。  
@@ -1919,10 +1924,11 @@ CDN处于用户和源站的中间位置，因此您可以在CDN中配置访问�
 
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>软件推荐</category>
       </categories>
       <tags>
         <tag>传递优化</tag>
+        <tag>分享</tag>
       </tags>
   </entry>
   <entry>
@@ -1946,8 +1952,12 @@ CDN处于用户和源站的中间位置，因此您可以在CDN中配置访问�
 版权 Ice_exe开发 Ice_exe 
 ]]></content>
       <categories>
-        <category>软件</category>
+        <category>我的项目</category>
       </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>易语言</tag>
+      </tags>
   </entry>
   <entry>
     <title>劫持公告</title>
@@ -1975,6 +1985,9 @@ Vercel阻断恢复 域名正常解析
 
 
 ]]></content>
+      <categories>
+        <category>站点公告</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>站点日志</tag>
@@ -2044,29 +2057,31 @@ Part-B  记录表
 图集[持续更新]  
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>生活日常</category>
       </categories>
       <tags>
-        <tag>萌物</tag>
+        <tag>分享</tag>
+        <tag>动物</tag>
       </tags>
   </entry>
   <entry>
     <title>资源-孤注一掷</title>
     <url>/posts/35430.html</url>
-    <content><![CDATA[
+    <content><![CDATA[2023-11-13 资源失效更新
 下载链接
             视频地址
           ]]></content>
       <categories>
-        <category>分享</category>
+        <category>资源中心</category>
       </categories>
       <tags>
+        <tag>分享</tag>
         <tag>影视</tag>
       </tags>
   </entry>
   <entry>
     <title>共住人高烧</title>
-    <url>/posts/%E9%AB%98%E7%83%A7.html</url>
+    <url>/posts/s913.html</url>
     <content><![CDATA[推荐阅读:月考分析
   
 正文  
@@ -2137,7 +2152,7 @@ Part-B  记录表
 [持续更新]  
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>生活日常</category>
       </categories>
       <tags>
         <tag>新冠</tag>
@@ -2177,8 +2192,12 @@ Part-B  记录表
 
 ]]></content>
       <categories>
-        <category>分享</category>
+        <category>资源中心</category>
       </categories>
+      <tags>
+        <tag>大语文</tag>
+        <tag>写作</tag>
+      </tags>
   </entry>
   <entry>
     <title>又是月考吖[分析说明]</title>
@@ -2349,7 +2368,7 @@ PS:在校的130min是我属实没有想到的，甚至以为算错了.
   </entry>
   <entry>
     <title>期中考试总结及部分答案</title>
-    <url>/posts/353.html</url>
+    <url>/posts/353a.html</url>
     <content><![CDATA[简介心态第一，测试第二
 
 
@@ -2364,23 +2383,29 @@ PS:在校的130min是我属实没有想到的，甚至以为算错了.
 版权 Ice_exe
 ]]></content>
       <categories>
-        <category>校园</category>
+        <category>聚焦时事</category>
       </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>分享</tag>
+      </tags>
   </entry>
   <entry>
     <title>校园快线</title>
     <url>/posts/8124.html</url>
-    <content><![CDATA[Welcome几个星期的运营，也是出现了不少问题，谨慎选择乘坐
-
- -9月1日起，常熟特色公交服务项目“先锋护航”校园快线正式开行第一批快线服务于常熟市外国语初级中学，目前该校申请乘坐校园快线的学生已达495名，常熟相关公交公司共投入了10辆公交车，全力服务学生上下学。      
+    <content><![CDATA[Welcome -9月1日起，常熟特色公交服务项目“先锋护航”校园快线正式开行第一批快线服务于常熟市外国语初级中学，目前该校申请乘坐校园快线的学生已达495名，常熟相关公交公司共投入了10辆公交车，全力服务学生上下学。      
  -常熟外国语“校园快线”是常熟首条先试先行的线路。该线路在既有运力条件下，最大限度串联起学校施教区内学生所在小区，方便学生出行，减少家长接送压力，大大缓解学校周边道路通行压力，有效提升虞山北路周边公交服务线网运行效率。
  -此外，为了让家长实时掌握孩子的乘车情况，市交通运输局积极做好相关配套信息化建设，家长可绑定“常熟行”微信公众号实时了解学生乘车情况，使上下学的路途更加放心安心。
 
 参考文本 扬子晚报
 ]]></content>
       <categories>
-        <category>校园</category>
+        <category>聚焦时事</category>
       </categories>
+      <tags>
+        <tag>热门</tag>
+        <tag>交通快报</tag>
+      </tags>
   </entry>
   <entry>
     <title>自招！启动！😅</title>
@@ -2432,12 +2457,16 @@ SAONotify("Tips","本文图片相较于其他文章多，加载慢请稍等");
 版权 Ice_exe本文禁止转载&#x2F;但不包括分享  
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>生活日常</category>
       </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>游览风光</tag>
+      </tags>
   </entry>
   <entry>
     <title>记一次butterfly主题重启</title>
-    <url>/posts/34039.html</url>
+    <url>/posts/34a39.html</url>
     <content><![CDATA[感谢Decheng大佬提供的帮助
 
 本文为翻译方便，部分语段表达可能略显生硬
@@ -2498,8 +2527,12 @@ git config --global --add safe.directory &quot;*&quot;;
 版权&#x2F;作者：Ice_exe
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>我的项目</category>
       </categories>
+      <tags>
+        <tag>分享</tag>
+        <tag>经验</tag>
+      </tags>
   </entry>
   <entry>
     <title>使用内网穿透搭建远程控制</title>
@@ -2572,9 +2605,10 @@ unsplash 是一个提供壁纸下载的网站，壁纸质量很高，因为里�
 欢迎评论留言！
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>资源中心</category>
       </categories>
       <tags>
+        <tag>分享</tag>
         <tag>壁纸</tag>
       </tags>
   </entry>
