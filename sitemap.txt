@@ -1,8 +1,3 @@
-https://blog.marice.top/bkrj/index.html
-https://blog.marice.top/categories/index.html
-https://blog.marice.top/dailyPhoto/index.html
-https://blog.marice.top/essay/index.html
-https://blog.marice.top/fcircle/index.html
 https://blog.marice.top/gbdoc/index.html
 https://blog.marice.top/gbmusic/index.html
 https://blog.marice.top/json/music.json
@@ -18,6 +13,11 @@ https://blog.marice.top/posts/d50a.html
 https://blog.marice.top/GPL/index.html
 https://blog.marice.top/about/index.html
 https://blog.marice.top/album/index.html
+https://blog.marice.top/bkrj/index.html
+https://blog.marice.top/categories/index.html
+https://blog.marice.top/dailyPhoto/index.html
+https://blog.marice.top/essay/index.html
+https://blog.marice.top/fcircle/index.html
 https://blog.marice.top/posts/56682.html
 https://blog.marice.top/posts/d53d.html
 https://blog.marice.top/posts/63207.html
