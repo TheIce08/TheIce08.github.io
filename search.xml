@@ -30,7 +30,7 @@
   </entry>
   <entry>
     <title>如何添加CSS/JS？</title>
-    <url>/posts/%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%86%85%E5%AE%B9.html</url>
+    <url>/posts/kls2.html</url>
     <content><![CDATA[
 前言魔改的基础是CSS&#x2F;JS，新人请仔细阅读
  
@@ -45,10 +45,11 @@ inject:  head:    # 自定义css    - &lt;link rel=&quot;stylesheet&quot; href=&
 
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>Butterfly🦋</category>
       </categories>
       <tags>
-        <tag>Butterfly🦋</tag>
+        <tag>分享</tag>
+        <tag>经验</tag>
       </tags>
   </entry>
   <entry>
@@ -74,9 +75,10 @@ PAT	    Github 个人访问密钥，需要具有 workflow 权限USER	E5 管理�
 现在按照链接说明，关闭 E5 管理员账号的 两步验证（多因素认证、安全默认值）
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>软件推荐</category>
       </categories>
       <tags>
+        <tag>分享</tag>
         <tag>Office365</tag>
       </tags>
   </entry>
@@ -163,10 +165,11 @@ inject:  head:  - ...  bottom:  - ...  - &lt;script type=&quot;text/javascript&q
 然后你就拥有了一个好看且功能丰富的右键菜单了！
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>Butterfly🦋</category>
       </categories>
       <tags>
-        <tag>Butterfly🦋</tag>
+        <tag>分享</tag>
+        <tag>经验</tag>
       </tags>
   </entry>
   <entry>
@@ -197,15 +200,16 @@ nav.pug替换  themes&#x2F;butterfly&#x2F;layout&#x2F;includes&#x2F;header&#x2F;
 写在最后这是一个粗略的教程（抱歉），图标可以在主题配置文件自行更改  
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>我的项目</category>
       </categories>
       <tags>
-        <tag>Butterfly</tag>
+        <tag>经验</tag>
+        <tag>Butterfly🦋</tag>
       </tags>
   </entry>
   <entry>
     <title>添加侧边栏时钟</title>
-    <url>/posts/%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%97%B6%E9%92%9F.html</url>
+    <url>/posts/dks1.html</url>
     <content><![CDATA[
 前言需要前置教程
  
@@ -316,15 +320,15 @@ text
 
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>Butterfly🦋</category>
       </categories>
       <tags>
-        <tag>Butterfly🦋</tag>
+        <tag>分享</tag>
       </tags>
   </entry>
   <entry>
     <title>Butterfly主题魔改日记（一）</title>
-    <url>/posts/%E9%AD%94%E6%94%B9%E6%97%A5%E8%AE%B0.html</url>
+    <url>/posts/js9s.html</url>
     <content><![CDATA[前言 点击查看更新日志 
               
               更新日志2022-12-2更新内容-自定义新版右键菜单2022-12-1开始撰写本文章更新内容-导航栏魔改方案 出处Ice
@@ -426,7 +430,7 @@ IIII
 
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>我的项目</category>
       </categories>
       <tags>
         <tag>Butterfly🦋</tag>
@@ -454,7 +458,7 @@ IIII
 
 ]]></content>
       <categories>
-        <category>站长</category>
+        <category>站点公告</category>
       </categories>
   </entry>
   <entry>
@@ -1927,8 +1931,8 @@ CDN处于用户和源站的中间位置，因此您可以在CDN中配置访问�
         <category>软件推荐</category>
       </categories>
       <tags>
-        <tag>传递优化</tag>
         <tag>分享</tag>
+        <tag>传递优化</tag>
       </tags>
   </entry>
   <entry>
@@ -1981,6 +1985,9 @@ Vercel阻断恢复 域名正常解析
 江苏地区访问仍受运营商阻断江苏移动、电信仍然无法正常访问初步排查可能为系统误判或CDN未备案
 11-8
 江苏地区访问仍受运营商阻断CDN备案下发
+11-16
+更换CDN为初七云
+
 
 
 
@@ -2200,8 +2207,8 @@ Part-B  记录表
       </tags>
   </entry>
   <entry>
-    <title>又是月考吖[分析说明]</title>
-    <url>/posts/%E5%8F%88%E6%98%AF%E6%9C%88%E8%80%83%E5%90%96%5B%E5%88%86%E6%9E%90%E8%AF%B4%E6%98%8E%5D.html</url>
+    <title>又是月考吖</title>
+    <url>/posts/sja2.html</url>
     <content><![CDATA[推荐阅读:Butterfly魔改日记①
   
 正文Part-A  Feels
@@ -2360,10 +2367,11 @@ PS:在校的130min是我属实没有想到的，甚至以为算错了.
 [等待更新]
 ]]></content>
       <categories>
-        <category>校园</category>
+        <category>经验分享</category>
       </categories>
       <tags>
-        <tag>考试分析</tag>
+        <tag>分享</tag>
+        <tag>经验</tag>
       </tags>
   </entry>
   <entry>
@@ -2386,18 +2394,15 @@ PS:在校的130min是我属实没有想到的，甚至以为算错了.
         <category>聚焦时事</category>
       </categories>
       <tags>
-        <tag>日常</tag>
         <tag>分享</tag>
+        <tag>日常</tag>
       </tags>
   </entry>
   <entry>
     <title>校园快线</title>
     <url>/posts/8124.html</url>
-    <content><![CDATA[Welcome -9月1日起，常熟特色公交服务项目“先锋护航”校园快线正式开行第一批快线服务于常熟市外国语初级中学，目前该校申请乘坐校园快线的学生已达495名，常熟相关公交公司共投入了10辆公交车，全力服务学生上下学。      
- -常熟外国语“校园快线”是常熟首条先试先行的线路。该线路在既有运力条件下，最大限度串联起学校施教区内学生所在小区，方便学生出行，减少家长接送压力，大大缓解学校周边道路通行压力，有效提升虞山北路周边公交服务线网运行效率。
- -此外，为了让家长实时掌握孩子的乘车情况，市交通运输局积极做好相关配套信息化建设，家长可绑定“常熟行”微信公众号实时了解学生乘车情况，使上下学的路途更加放心安心。
-
-参考文本 扬子晚报
+    <content><![CDATA[Welcome
+自9月1日起，常熟特色公交服务项目“先锋护航”校园快线正式开行第一批快线服务于常熟市外国语初级中学申请乘   坐校园快线的学生已达495名，常熟相关公交公司共投入了10辆公交车，全力服务学生上下学。常熟外国语“校园快线”是常熟首条先试先行的线路。该线路在既有运力条件下，最大限度串联起学校施教区内学生所在小区，方便学生出行，减少家长接送压力，大大缓解学校周边道路通行压力，有效提升虞山北路周边公交服务 线网运行效率。
 ]]></content>
       <categories>
         <category>聚焦时事</category>
@@ -2413,7 +2418,7 @@ PS:在校的130min是我属实没有想到的，甚至以为算错了.
     <content><![CDATA[为了愿望，我们百炼成钢；为了理想，我们傲雪凌霜。奋战百天，让飞翔的梦在夏季张开翅膀，奋战百天，让雄心与智慧在六月闪光正如古语所言”宁吃百日苦，不留终生憾”,吾辈当自强!今天是2023年5月18日,时光飞逝,日月如梭,转眼间我们即将迎来期末考试八下这一路上,布满坎坷.有人说,你深陷坑中无法自拔;有人说,你才华横溢崭露锋芒.多种看法里,我更愿意遵从我梦想的方向!在我们的身边,有许许多多优秀的人,但”有阴必有阳”,也有不少待提升的人.古人云”近朱者赤,近墨者黑”,想必正是如此了.总而言之,在接下来极为关键或是直接可以称为决定性的日子里,让我们将加大马力,把握这临门一脚!当下的努力便是善待未来的自己,更是对内心的一份交代!即使一无所有,也要拼出个所以然来!望梦想成真!加油吧,同志们!  
 ]]></content>
       <categories>
-        <category>校园</category>
+        <category>生活日常</category>
       </categories>
       <tags>
         <tag>碎碎念</tag>
@@ -2557,8 +2562,8 @@ git config --global --add safe.directory &quot;*&quot;;
 可选-创建UDP链接创建一个相同远程端口，UDP模式的隧道。随后将两个隧道全开启。随后重启远程连接，可以发现提示“已启用UDP”，并且“良好”升级为“非常好至此 您便可使用软件配合内外穿透进行愉快的远程控制了！
 ]]></content>
       <tags>
-        <tag>传递优化</tag>
         <tag>分享</tag>
+        <tag>传递优化</tag>
       </tags>
   </entry>
   <entry>
