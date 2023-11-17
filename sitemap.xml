@@ -11,6 +11,33 @@
   </url>
   
   <url>
+    <loc>https://blog.081113.xyz/new/index.html</loc>
+    
+    <lastmod>2023-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/object/index.html</loc>
+    
+    <lastmod>2023-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.081113.xyz/tags/index.html</loc>
+    
+    <lastmod>2023-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.081113.xyz/wordScenery/index.html</loc>
     
     <lastmod>2023-11-17</lastmod>
@@ -156,33 +183,6 @@
   
   <url>
     <loc>https://blog.081113.xyz/music/index.html</loc>
-    
-    <lastmod>2023-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/new/index.html</loc>
-    
-    <lastmod>2023-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/object/index.html</loc>
-    
-    <lastmod>2023-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.081113.xyz/tags/index.html</loc>
     
     <lastmod>2023-11-17</lastmod>
     
