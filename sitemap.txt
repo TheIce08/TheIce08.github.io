@@ -1,4 +1,7 @@
 https://blog.marice.xyz/posts/56682.html
+https://blog.marice.xyz/json/music.json
+https://blog.marice.xyz/link/index.html
+https://blog.marice.xyz/music/index.html
 https://blog.marice.xyz/new/index.html
 https://blog.marice.xyz/object/index.html
 https://blog.marice.xyz/tags/index.html
@@ -16,9 +19,6 @@ https://blog.marice.xyz/essay/index.html
 https://blog.marice.xyz/fcircle/index.html
 https://blog.marice.xyz/gbdoc/index.html
 https://blog.marice.xyz/gbmusic/index.html
-https://blog.marice.xyz/json/music.json
-https://blog.marice.xyz/link/index.html
-https://blog.marice.xyz/music/index.html
 https://blog.marice.xyz/posts/63207.html
 https://blog.marice.xyz/posts/35430.html
 https://blog.marice.xyz/posts/d53d.html
