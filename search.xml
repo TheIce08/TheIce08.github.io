@@ -10,11 +10,11 @@
 
 
 
-## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
-## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
-## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
-## 如果没有跳转至新页面，请右键本页或右上方F5刷新页面！  
-****  
+## **如果没有跳转至新页面，请右键本页或右上方F5刷新页面！**  
+## **如果没有跳转至新页面，请右键本页或右上方F5刷新页面！**  
+## **如果没有跳转至新页面，请右键本页或右上方F5刷新页面！**  
+## **如果没有跳转至新页面，请右键本页或右上方F5刷新页面！**  
+****
 版权 Ice_exe  
 
 
@@ -87,7 +87,7 @@ PAT	    Github 个人访问密钥，需要具有 workflow 权限USER	E5 管理�
     <url>/posts/26302.html</url>
     <content><![CDATA[本期内容为保护隐私已打码 
   
-正文[#校方回应网传常熟某中学女生持刀伤人#:公安部门“正在调查”]    4月6日上午，有网友发帖称，江苏苏州常熟市某中学一名初三学生持刀伤害他人。当天上午10时,知情者透露，:“为常熟市实验中学崇文校区，“事发在今天早晨，女生好像拿了把匕首，被伤害男生疑似去世，具体为何发生矛盾尚不清楚。”具体情况还不是很清楚，目前公安人员正在了解具体情况，还在调查中。联系该学校所属的常熟市公安局虹桥派出所，接线人员称不清楚事件经过。
+正文[#校方回应网传常熟某中学女生持刀伤人#:公安部门“正在调查”]    4月6日上午，有网友发帖称，江苏苏州常熟市某中学一名初三学生持刀伤害他人。当天上午10时,知情者透露，常熟市实验中学崇文校区，“事发在今天早晨，女生好像拿了把匕首，被伤害男生疑似去世，具体为何发生矛盾尚不清楚。”具体情况还不是很清楚，目前公安人员正在了解具体情况，还在调查中。联系该学校所属的常熟市公安局虹桥派出所，接线人员称不清楚事件经过。
 图集网友热议
 疑似持刀女生
 疑似刀具
@@ -211,9 +211,10 @@ nav.pug替换  themes&#x2F;butterfly&#x2F;layout&#x2F;includes&#x2F;header&#x2F;
     <title>添加侧边栏时钟</title>
     <url>/posts/dks1.html</url>
     <content><![CDATA[
-前言需要前置教程
+需要前置教程
  
 风险等级III
+
 
 前置教程 点击查看参考内容 
               
@@ -504,6 +505,193 @@ More info: Deployment
     <url>/posts/d50a.html</url>
     <content><![CDATA[转自Anzhiyu主题文档
 
+
+标准写法title:date:updated:tags:categories:keywords:description:top_img:comments:cover:toc:toc_number:toc_style_simple:copyright:copyright_author:copyright_author_href:copyright_url:copyright_info:mathjax:katex:aplayer:highlight_shrink:aside:swiper_index: 1top_group_index: 1background: &quot;#fff&quot;
+
+
+
+
+写法
+解释
+
+
+
+title
+【必需】页面标题
+
+
+date
+【必需】页面创建日期
+
+
+type
+【必需】标签、分类、关于、音乐馆、友情链接、相册、相册详情、朋友圈、即刻页面需要配置
+
+
+updated
+【可选】页面更新日期
+
+
+description
+【可选】页面描述
+
+
+keywords
+【可选】页面关键字
+
+
+comments
+【可选】显示页面评论模块(默认 true)
+
+
+top_img
+【可选】页面顶部图片
+
+
+mathjax
+【可选】显示 mathjax(当设置 mathjax 的 per_page: false 时，才需要配置，默认 false)
+
+
+katex
+【可选】显示 katex(当设置 katex 的 per_page: false 时，才需要配置，默认 false)
+
+
+aside
+【可选】显示侧边栏 (默认 true)
+
+
+aplayer
+【可选】在需要的页面加载 aplayer 的 js 和 css,请参考文章下面的音乐 配置
+
+
+highlight_shrink
+【可选】配置代码框是否展开(true&#x2F;false)(默认为设置中 highlight_shrink 的配置)
+
+
+top_single_background
+【可选】部分页面的顶部模块背景图片
+
+
+Post Front-matter
+
+
+写法
+解释
+
+
+
+title
+【必需】文章标题
+
+
+date
+【必需】文章创建日期
+
+
+updated
+【可选】文章更新日期
+
+
+tags
+【可选】文章标签
+
+
+categories
+【可选】文章分类
+
+
+keywords
+【可选】文章关键字
+
+
+description
+【可选】文章描述
+
+
+top_img
+【可选】文章顶部图片
+
+
+cover
+【可选】文章缩略图(如果没有设置 top_img,文章页顶部将显示缩略图，可设为 false&#x2F;图片地址&#x2F;留空)
+
+
+comments
+【可选】显示文章评论模块(默认 true)
+
+
+toc
+【可选】显示文章 TOC(默认为设置中 toc 的 enable 配置)
+
+
+toc_number
+【可选】显示 toc_number(默认为设置中 toc 的 number 配置)
+
+
+toc_style_simple
+【可选】显示 toc 简洁模式
+
+
+copyright
+【可选】显示文章版权模块(默认为设置中 post_copyright 的 enable 配置)
+
+
+copyright_author
+【可选】文章版权模块的文章作者
+
+
+copyright_author_href
+【可选】文章版权模块的文章作者链接
+
+
+copyright_url
+【可选】文章版权模块的文章链接链接
+
+
+copyright_info
+【可选】文章版权模块的版权声明文字
+
+
+mathjax
+【可选】显示 mathjax(当设置 mathjax 的 per_page: false 时，才需要配置，默认 false)
+
+
+katex
+【可选】显示 katex(当设置 katex 的 per_page: false 时，才需要配置，默认 false)
+
+
+aplayer
+【可选】在需要的页面加载 aplayer 的 js 和 css,请参考文章下面的音乐 配置
+
+
+highlight_shrink
+【可选】配置代码框是否展开(true&#x2F;false)(默认为设置中 highlight_shrink 的配置)
+
+
+aside
+【可选】显示侧边栏 (默认 true)
+
+
+swiper_index
+【可选】首页轮播图配置 index 索引，数字越小越靠前
+
+
+top_group_index
+【可选】首页右侧卡片组配置, 数字越小越靠前
+
+
+ai
+【可选】文章ai摘要
+
+
+main_color
+【可选】文章主色，必须是16进制颜色且有6位，不可缩减，例如#ffffff 不可写成#fff
+
+
+
+首页轮播图配置: swiper_index, 数字越小越靠前
+首页卡片配置: top_group_index, 数字越小越靠前
+page 中top_single_background, 可配置部分页面的顶部背景图片
 
 商品链接
              
@@ -2005,7 +2193,8 @@ Vercel阻断恢复 域名正常解析
     <url>/posts/43455.html</url>
     <content><![CDATA[推荐阅读:新冠来袭
   
-正文第一个蛋 附图
+
+第一个蛋 附图
 Part-A  实时情况2023-2-17上午X时,诞下第一个蛋(组1)2023-2-18上午X时,诞下第二个蛋(组1)
 2023-2-24上午X时,诞下第一个蛋(组2)2023-2-25上午X时,诞下第二个蛋(组2)2023-2-25上午X时,诞下第三个蛋(组2)2023-2-25上午X时,诞下第七个蛋(组3)
 Part-B  记录表
@@ -2091,7 +2280,10 @@ Part-B  记录表
     <url>/posts/s913.html</url>
     <content><![CDATA[推荐阅读:月考分析
   
-正文  
+
+
+
+  
 Part-A  实时情况背景：居家隔离期间
  
 2022-12-22下午3时，我妈下班回家，发现有前一天晚上相同的症状即头疼，四肢酸，脑涨，全身热。到家时及路上佩戴口罩，回家后，我立即采取消毒措施。共住人服用退烧&#x2F;感冒药：“感冒清胶囊”  
@@ -2211,7 +2403,10 @@ Part-B  记录表
     <url>/posts/sja2.html</url>
     <content><![CDATA[推荐阅读:Butterfly魔改日记①
   
-正文Part-A  Feels
+
+
+
+Part-A  Feels
 
 
 科目
@@ -2379,9 +2574,9 @@ PS:在校的130min是我属实没有想到的，甚至以为算错了.
     <url>/posts/353a.html</url>
     <content><![CDATA[简介心态第一，测试第二
 
-
-正文自我总结数学总体这次数学的“阳光测评”整体来讲还是比较难的 毕竟人家老师也这么说测完和讲评完后同学们的情绪波动还是蛮大的qwq个人1.又进粗心的坑了…..选择填空就拱手9分2.做题速度太慢，第一遍做大题几乎空了4道，结果时间不太够了，好在后来大部分都补了回来而且对了 lol3.部分解答题有点ex，大部分题本质会做，但没想那么多..  
+自我总结数学总体这次数学的“阳光测评”整体来讲还是比较难的 毕竟人家老师也这么说测完和讲评完后同学们的情绪波动还是蛮大的qwq个人1.又进粗心的坑了…..选择填空就拱手9分2.做题速度太慢，第一遍做大题几乎空了4道，结果时间不太够了，好在后来大部分都补了回来而且对了 lol3.部分解答题有点ex，大部分题本质会做，但没想那么多..  
 总的讲就是多练.多看.多学
+
 英语1.分数没出来，作文前浅浅估了一下分数，大概还是不错的，但是和年级组里的某些大佬们还是有不少差距的（毕竟作文生死未卜…2.阅读理解一道送分死题白给 T-T3.词汇量还是不够，部分文章部分句子没看懂，靠猜…听说这次作文批的蛮严的……   
 语文1.和英语一样，作文分未出，生死未卜2.第一,二部分做的还不是很满意，大阅读情感还是没抓到位！！在线蹲一个语文学科大佬带飞！！ QQ：1983589713  
 物理1.没话说，错就是不小心，都是死题  
