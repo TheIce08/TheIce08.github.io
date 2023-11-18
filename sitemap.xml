@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/posts/17335.html</loc>
+    <loc>https://blog.marice.top/GPL/index.html</loc>
     
     <lastmod>2023-11-18</lastmod>
     
@@ -174,15 +174,6 @@
   
   <url>
     <loc>https://blog.marice.top/%E7%95%99%E8%A8%80/404.html</loc>
-    
-    <lastmod>2023-11-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/GPL/index.html</loc>
     
     <lastmod>2023-11-18</lastmod>
     
@@ -496,13 +487,6 @@
   
   <url>
     <loc>https://blog.marice.top/tags/%E4%BC%A0%E9%80%92%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2023-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/tags/%E6%98%93%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2023-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
