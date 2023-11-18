@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/GPL/index.html</loc>
-    
-    <lastmod>2023-11-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/about/index.html</loc>
     
     <lastmod>2023-11-18</lastmod>
@@ -182,18 +173,9 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/posts/56682.html</loc>
+    <loc>https://blog.marice.top/GPL/index.html</loc>
     
-    <lastmod>2023-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/posts/d53d.html</loc>
-    
-    <lastmod>2023-11-17</lastmod>
+    <lastmod>2023-11-18</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -218,15 +200,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/posts/d50v.html</loc>
-    
-    <lastmod>2023-11-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/posts/34a39.html</loc>
     
     <lastmod>2023-11-11</lastmod>
@@ -239,24 +212,6 @@
     <loc>https://blog.marice.top/posts/16590.html</loc>
     
     <lastmod>2023-11-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/posts/56621.html</loc>
-    
-    <lastmod>2023-10-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/posts/44196.html</loc>
-    
-    <lastmod>2023-10-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -444,13 +399,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/tags/Office365/</loc>
-    <lastmod>2023-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/tags/Butterfly%F0%9F%A6%8B/</loc>
     <lastmod>2023-11-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -486,20 +434,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/tags/%E4%BC%A0%E9%80%92%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2023-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/tags/%E7%AB%99%E7%82%B9%E6%97%A5%E5%BF%97/</loc>
-    <lastmod>2023-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/tags/%E5%8A%A8%E7%89%A9/</loc>
     <lastmod>2023-11-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -515,20 +449,6 @@
   
   <url>
     <loc>https://blog.marice.top/tags/%E6%96%B0%E5%86%A0/</loc>
-    <lastmod>2023-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/tags/%E5%A4%A7%E8%AF%AD%E6%96%87/</loc>
-    <lastmod>2023-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/tags/%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2023-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -573,13 +493,6 @@
   
   <url>
     <loc>https://blog.marice.top/categories/Butterfly%F0%9F%A6%8B/</loc>
-    <lastmod>2023-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2023-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
