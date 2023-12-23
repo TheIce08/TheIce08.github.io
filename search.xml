@@ -79,6 +79,88 @@
       </tags>
   </entry>
   <entry>
+    <title>倒数日 - 你的桌面轻量计时神器</title>
+    <url>/posts/i72s.html</url>
+    <content><![CDATA[简介倒数日的灵感来源于著名安卓和 IOS 端的 “倒计时” 软件，很遗憾的是，他们无一设计了桌面端程序。我试用过了各大网站现阶段上线的倒计时桌面程序，他们要么界面令人窒息，交互体验令人崩溃，要么早已弃坑，放弃更新。联想到即将到来的中考，“倒数日” 这个程序的设计思路便油然而生了。  
+这个应用本身并不是很复杂，但想要做到优良的体验、简洁轻量的结构仍然是一个挑战。  
+
+设计在这个软件上仍然保留了和其他软件接近的简洁设计，亚克力背景带给您的是无与伦比的精彩。
+在本程序中，虽然为了保证流畅我们没有加入动画，但是配合了不同的背景色彩、文字色彩。让人使用起来有赏心悦目的感觉。 此外，强调色设计成为了本程序的特色的一部分！
+精心考量的界面与结构相信能给你带来独一无二的有趣体验。我们永久承诺无广告。  
+
+交互易⁺系列安装程序新版本倒数日的安装采用了自主研发的 “易⁺系列” 安装程序，操作简便，运行占用小，界面高度自定义化，更加美观。
+功能
+高度的自定义，你的世界由你随心绘制  
+
+主题强调色设计，醒目的时间，助力您的成功
+
+卡片式设计，现代化的风格
+
+无操作门槛即可入门
+
+支持桌面组件、锁屏组件、后台活动
+
+简洁的界面和优秀的交互
+
+纯净的安装程序和平滑的字体显示
+
+Windows XP 支持
+
+
+获取本程序
+
+
+类别
+内容
+
+
+
+系统要求
+设备需装有 Windows XP 或更高版本。
+
+
+售价
+免费
+
+
+年龄分级
+ 4+
+
+
+ 版权
+ ©Marice Studio
+
+
+ 语言
+简体中文
+
+
+类別
+工具
+
+
+大小
+安装包 2.31 MB 程序 3.47 MB
+
+
+下载地址
+Onedrive  微软云盘分流 - 点击下载
+
+ 123Pan 123 云盘分流 - 点击下载
+
+
+欢迎留下您的宝贵建议！
+]]></content>
+      <categories>
+        <category>我的项目</category>
+      </categories>
+      <tags>
+        <tag>开发</tag>
+        <tag>必看</tag>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小米路由 Ax3000t 初体验</title>
     <url>/posts/d59s.html</url>
     <content><![CDATA[起最近我家的宽带升级到了更高的水准，之前在疫情期间应急购买的百兆路由器已经不足够带宽传输的要求了。非常幸运，我的电脑支持 1Gbps 的有线传输速率，更换路由器成为了当务之急。在各个平台做足了一些攻略后，预算百元入门机的我看重了小米路由器 AX3000T 和中兴巡天 AX3000。
@@ -217,12 +299,12 @@ CDN 处于用户和源站的中间位置，因此您可以在 CDN 中配置访�
       </tags>
   </entry>
   <entry>
-    <title>小程序创新计划：冰块_刷屏器 正式发布</title>
+    <title>冰块输入助手 - 是时候放开双手了</title>
     <url>/posts/17335.html</url>
     <content><![CDATA[正文介绍功能多 效果达标
 
-✅可限制次数✅选择输入方式✅适配 QQ✅适配 Wechat✅快速控制✅可视化 GUI✅易语言打造✅无病毒木马 免杀
-你是否还在为被骚扰而无可奈何？这款刷屏器将助你一臂之力！  
+✅可限制次数✅选择输入方式✅适配 QQ✅适配 Wechat✅快速控制✅可视化 GUI✅易语言打造✅无病毒木马
+你是否还在为被骚扰而无可奈何？这款输入助手将助你一臂之力！  
 多种功能设定 + 多种情况选择  
 免费 的软件使用  
 
@@ -240,8 +322,8 @@ CDN 处于用户和源站的中间位置，因此您可以在 CDN 中配置访�
         <category>我的项目</category>
       </categories>
       <tags>
-        <tag>小程序</tag>
-        <tag>易语言</tag>
+        <tag>开发</tag>
+        <tag>必看</tag>
       </tags>
   </entry>
   <entry>
@@ -2458,30 +2540,6 @@ console.log(    "Codes uses GPL Licence")function insertAtCursor(myField, myValu
 因为这个 js 依赖于 jquery，所以还需要引入 jquery，在主题配置文件中引入：  
 inject:  head:  - ...  bottom:  - ...  - &lt;script type="text/javascript" src="https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js"&gt;&lt;/script&gt;  - &lt;script type="text/javascript" src="/js/rightmenu.js"&gt;&lt;/script&gt;  - ...
 然后你就拥有了一个好看且功能丰富的右键菜单了！
-]]></content>
-      <categories>
-        <category>Butterfly🦋</category>
-      </categories>
-      <tags>
-        <tag>分享</tag>
-        <tag>经验</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何添加 CSS/JS？</title>
-    <url>/posts/kls2.html</url>
-    <content><![CDATA[
-前言魔改的基础是 CSS/JS，新人请仔细阅读
- 
-因为写了几篇关于 hexo 博客的文章，基本都涉及到自定义 css 和 js。然后就有很多人问怎么用，在哪添加等等等等。一看就是没好好读文档！官方文档链接放下面了，晚会去看，先看我的，我说的详细。Butterfly 主题官方文档：https://butterfly.js.org/  
-超前总结很多人迷茫无外乎不知道在哪创建，创建了不知道在哪引入。文件夹创建位置：source 目录下面，也就是和_post目录同级在哪引入：如果是全站css/js 的话，可以在主题配置文件里的 inject 下的 head 和 bottom 里引入，如果是某一页的，可以在该页里面直接引入。  
-详细教程创建文件夹我们找到 source 文件夹在里面创建 js 和 css 文件夹，如果你有其他需求，也可以在这里创建文件夹，例如存放图片的 img 文件夹，存放字体的 font 文件夹等等。不要直接在主题目录下面创建文件夹，虽然这样也可以，但是主题更新没做转移的话就 GG 了   
-引入文件一般来说，我们都是在主题配置文件（_config.butterfly.yml）里面的 inject 引入。css 文件在 head 引入，js 文件在 bottom 里引入，有的 js 要求在 head 引入，不然无法生效。例如引入 css 里面的 style.css 和 js 文件夹里面的 script.js 文件夹，可以这样写:
-inject:  head:    # 自定义css    - &lt;link rel="stylesheet" href="/css/style.css?v1"&gt;    # 静态文件后面加个  ?任意内容  可以在每次更新之后用户自动重新请求.    # 例如添加 ?1 ,在修改此文件后改成 ?2 ,用户访问你的网站时,不会使用本地的缓存,而是请求新的内容。没修改的话就不用动。  bottom:    # 自定义js    - &lt;script src="/js/script.js?v1"&gt;&lt;/script&gt;    # 引入多个文件就直接往下复制一行改一下文件名即可，如下：    - &lt;script src="/js/script1.js?v1"&gt;&lt;/script&gt;    - &lt;script src="/js/script2.js?v1"&gt;&lt;/script&gt;
-
-
-注意：路径要添加 /xxx，不能添加 ./xxx。如果有其他问题请评论区留言
-
 ]]></content>
       <categories>
         <category>Butterfly🦋</category>
