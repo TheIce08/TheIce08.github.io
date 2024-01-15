@@ -83,6 +83,15 @@
   </url>
   
   <url>
+    <loc>https://blog.marice.top/gbdoc/index.html</loc>
+    
+    <lastmod>2024-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.marice.top/wordScenery/index.html</loc>
     
     <lastmod>2024-01-15</lastmod>
@@ -93,6 +102,15 @@
   
   <url>
     <loc>https://blog.marice.top/%E5%AF%BC%E8%88%AA/index.html</loc>
+    
+    <lastmod>2024-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/gbmusic/index.html</loc>
     
     <lastmod>2024-01-15</lastmod>
     
@@ -165,24 +183,6 @@
   
   <url>
     <loc>https://blog.marice.top/dailyPhoto/index.html</loc>
-    
-    <lastmod>2024-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/gbdoc/index.html</loc>
-    
-    <lastmod>2024-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/gbmusic/index.html</loc>
     
     <lastmod>2024-01-15</lastmod>
     
@@ -633,6 +633,13 @@
 
   
   <url>
+    <loc>https://blog.marice.top/categories/%E8%B5%84%E6%BA%90%E4%B8%AD%E5%BF%83/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.marice.top/categories/%E7%AB%99%E7%82%B9%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -655,13 +662,6 @@
   
   <url>
     <loc>https://blog.marice.top/categories/%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/categories/%E8%B5%84%E6%BA%90%E4%B8%AD%E5%BF%83/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
