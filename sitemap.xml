@@ -29,24 +29,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/about/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/categories/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/link/index.html</loc>
     
     <lastmod>2024-02-03</lastmod>
@@ -65,24 +47,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/fcircle/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/album/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/music/index.html</loc>
     
     <lastmod>2024-02-03</lastmod>
@@ -92,34 +56,7 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/bkrj/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/object/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/essay/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/dailyPhoto/index.html</loc>
     
     <lastmod>2024-02-03</lastmod>
     
@@ -146,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/gbdoc/index.html</loc>
-    
-    <lastmod>2024-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/wordScenery/index.html</loc>
     
     <lastmod>2024-02-03</lastmod>
@@ -173,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/gbmusic/index.html</loc>
+    <loc>https://blog.marice.top/posts/d50a.html</loc>
     
     <lastmod>2024-02-03</lastmod>
     
@@ -182,7 +110,79 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/posts/d50a.html</loc>
+    <loc>https://blog.marice.top/about/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/categories/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/fcircle/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/album/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/bkrj/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/essay/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/dailyPhoto/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/gbdoc/index.html</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/gbmusic/index.html</loc>
     
     <lastmod>2024-02-03</lastmod>
     
@@ -601,6 +601,20 @@
 
   
   <url>
+    <loc>https://blog.marice.top/categories/%E8%81%9A%E7%84%A6%E6%97%B6%E4%BA%8B/</loc>
+    <lastmod>2024-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/categories/%E8%B5%84%E6%BA%90%E4%B8%AD%E5%BF%83/</loc>
+    <lastmod>2024-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.marice.top/categories/%E7%AB%99%E7%82%B9%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -629,13 +643,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/categories/%E8%B5%84%E6%BA%90%E4%B8%AD%E5%BF%83/</loc>
-    <lastmod>2024-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/categories/%E9%97%B2%E8%81%8A%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -644,13 +651,6 @@
   
   <url>
     <loc>https://blog.marice.top/categories/Butterfly%F0%9F%A6%8B/</loc>
-    <lastmod>2024-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/categories/%E8%81%9A%E7%84%A6%E6%97%B6%E4%BA%8B/</loc>
     <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
