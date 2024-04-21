@@ -191,15 +191,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/posts/s1k2.html</loc>
-    
-    <lastmod>2024-04-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/essay/index.html</loc>
     
     <lastmod>2024-04-19</lastmod>
@@ -257,6 +248,15 @@
     <loc>https://blog.marice.top/posts/d59s.html</loc>
     
     <lastmod>2023-12-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/posts/d53g.html</loc>
+    
+    <lastmod>2023-12-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
