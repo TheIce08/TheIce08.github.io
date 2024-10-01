@@ -137,15 +137,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/about/index.html</loc>
-    
-    <lastmod>2024-10-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/categories/index.html</loc>
     
     <lastmod>2024-10-01</lastmod>
@@ -156,6 +147,15 @@
   
   <url>
     <loc>https://blog.marice.top/bkrj/index.html</loc>
+    
+    <lastmod>2024-10-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/about/index.html</loc>
     
     <lastmod>2024-10-01</lastmod>
     
