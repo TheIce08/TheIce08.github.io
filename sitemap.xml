@@ -110,15 +110,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/posts/d50a.html</loc>
-    
-    <lastmod>2024-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/about/index.html</loc>
     
     <lastmod>2024-12-07</lastmod>
@@ -165,6 +156,15 @@
   
   <url>
     <loc>https://blog.marice.top/ads/index.html</loc>
+    
+    <lastmod>2024-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/posts/d50a.html</loc>
     
     <lastmod>2024-12-07</lastmod>
     
