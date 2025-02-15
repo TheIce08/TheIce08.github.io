@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>冰火之砺</title>
-  
+  <follow_challenge>
+    <feedId>61286018770604032</feedId>
+    <userId>113504287772637184</userId>
+  </follow_challenge>
   <subtitle>分享技术和生活</subtitle>
   <link href="https://blog.marice.top/atom.xml" rel="self"/>
   
