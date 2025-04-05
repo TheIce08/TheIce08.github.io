@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/tags/index.html</loc>
-    
-    <lastmod>2025-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/wordScenery/index.html</loc>
     
     <lastmod>2025-04-05</lastmod>
@@ -38,7 +29,25 @@
   </url>
   
   <url>
+    <loc>https://blog.marice.top/tags/index.html</loc>
+    
+    <lastmod>2025-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.marice.top/manifest.json</loc>
+    
+    <lastmod>2025-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/json/music.json</loc>
     
     <lastmod>2025-04-05</lastmod>
     
@@ -66,15 +75,6 @@
   
   <url>
     <loc>https://blog.marice.top/privacy/index.html</loc>
-    
-    <lastmod>2025-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/json/music.json</loc>
     
     <lastmod>2025-04-05</lastmod>
     
