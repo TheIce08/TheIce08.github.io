@@ -598,6 +598,35 @@
   </entry>
   
   <entry>
+    <title>如何添加 CSS/JS？</title>
+    <link href="https://blog.marice.top/posts/kls2.html"/>
+    <id>https://blog.marice.top/posts/kls2.html</id>
+    <published>2022-12-01T11:38:00.000Z</published>
+    <updated>2025-02-10T03:30:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://wmimg.com/i/1452/2025/02/67a974ae5e46d.png"></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note warning modern"><p>魔改的基础是 CSS/JS，新人请仔细阅读</p></div> <p>因为写了几篇关于 hexo 博客的文章，基本都涉及到自定义 css 和 js。然后就有很多人问怎么用，在哪添加等等等等。<br>一看就是<code>没好好读文档</code>！<br>官方文档链接放下面了，晚会去看，先看我的，我说的详细。<br>Butterfly 主题官方文档：<a href="https://butterfly.js.org/">https://butterfly.js.org/</a>  </p><h2 id="超前总结"><a href="#超前总结" class="headerlink" title="超前总结"></a>超前总结</h2><p>很多人迷茫无外乎不知道在哪创建，创建了不知道在哪引入。<br>文件夹创建位置：<code>source</code> 目录下面，也就是和<code>_post目录</code>同级<br>在哪引入：如果是<code>全站css/js</code> 的话，可以在<code>主题配置文件</code>里的 <code>inject</code> 下的 <code>head 和 bottom</code> 里引入，如果是某一页的，可以在该页里面直接引入。  </p><h2 id="详细教程"><a href="#详细教程" class="headerlink" title="详细教程"></a>详细教程</h2><h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><p>我们找到 <code>source</code> 文件夹<br>在里面创建 js 和 css 文件夹，如果你有其他需求，也可以在这里创建文件夹，例如存放图片的 img 文件夹，存放字体的 font 文件夹等等。<br><strong>不要直接在主题目录下面创建文件夹，虽然这样也可以，但是主题更新没做转移的话就 GG 了</strong>   </p><h3 id="引入文件"><a href="#引入文件" class="headerlink" title="引入文件"></a>引入文件</h3><p>一般来说，我们都是在主题配置文件（<code>_config.butterfly.yml</code>）里面的 <code>inject</code> 引入。<br>css 文件在 <code>head</code> 引入，js 文件在 <code>bottom</code> 里引入，有的 js 要求在 head 引入，不然无法生效。<br><strong>例如引入 css 里面的 style.css 和 js 文件夹里面的 script.js 文件夹，可以这样写:</strong></p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">    # 自定义css</span><br><span class="line">    - &lt;link rel="stylesheet" href="/css/style.css?v1"&gt;</span><br><span class="line">    # 静态文件后面加个  ?任意内容  可以在每次更新之后用户自动重新请求.</span><br><span class="line">    # 例如添加 ?1 ,在修改此文件后改成 ?2 ,用户访问你的网站时,不会使用本地的缓存,而是请求新的内容。没修改的话就不用动。</span><br><span class="line">  bottom:</span><br><span class="line">    # 自定义js</span><br><span class="line">    - &lt;script src="/js/script.js?v1"&gt;&lt;/script&gt;</span><br><span class="line">    # 引入多个文件就直接往下复制一行改一下文件名即可，如下：</span><br><span class="line">    - &lt;script src="/js/script1.js?v1"&gt;&lt;/script&gt;</span><br><span class="line">    - &lt;script src="/js/script2.js?v1"&gt;&lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure><blockquote><p>注意：路径要添加 <code>/xxx</code>，不能添加 <code>./xxx</code>。<br>如果有其他问题请评论区留言</p></blockquote>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="Butterfly🦋" scheme="https://blog.marice.top/categories/Butterfly%F0%9F%A6%8B/"/>
+    
+    
+    <category term="分享" scheme="https://blog.marice.top/tags/%E5%88%86%E4%BA%AB/"/>
+    
+    <category term="经验" scheme="https://blog.marice.top/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Butterfly 主题魔改日记（一）</title>
     <link href="https://blog.marice.top/posts/js9s.html"/>
     <id>https://blog.marice.top/posts/js9s.html</id>
