@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/privacy/index.html</loc>
-    
-    <lastmod>2025-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.marice.top/manifest.json</loc>
     
     <lastmod>2025-04-05</lastmod>
@@ -83,6 +74,24 @@
   </url>
   
   <url>
+    <loc>https://blog.marice.top/privacy/index.html</loc>
+    
+    <lastmod>2025-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/fonts/reporter.json</loc>
+    
+    <lastmod>2025-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.marice.top/gbdoc/index.html</loc>
     
     <lastmod>2025-04-05</lastmod>
@@ -93,15 +102,6 @@
   
   <url>
     <loc>https://blog.marice.top/gbmusic/index.html</loc>
-    
-    <lastmod>2025-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/fonts/reporter.json</loc>
     
     <lastmod>2025-04-05</lastmod>
     
