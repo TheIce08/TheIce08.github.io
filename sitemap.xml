@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.marice.top/tags/index.html</loc>
+    
+    <lastmod>2025-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.marice.top/wordScenery/index.html</loc>
     
     <lastmod>2025-04-05</lastmod>
@@ -21,33 +30,6 @@
   
   <url>
     <loc>https://blog.marice.top/%E5%AF%BC%E8%88%AA/index.html</loc>
-    
-    <lastmod>2025-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/tags/index.html</loc>
-    
-    <lastmod>2025-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/object/index.html</loc>
-    
-    <lastmod>2025-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.marice.top/privacy/index.html</loc>
     
     <lastmod>2025-04-05</lastmod>
     
@@ -75,6 +57,24 @@
   
   <url>
     <loc>https://blog.marice.top/music/index.html</loc>
+    
+    <lastmod>2025-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/object/index.html</loc>
+    
+    <lastmod>2025-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.marice.top/privacy/index.html</loc>
     
     <lastmod>2025-04-05</lastmod>
     
@@ -743,14 +743,14 @@
   </url>
   
   <url>
-    <loc>https://blog.marice.top/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://blog.marice.top/categories/%E8%B5%84%E6%BA%90%E4%B8%AD%E5%BF%83/</loc>
     <lastmod>2025-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.marice.top/categories/%E8%B5%84%E6%BA%90%E4%B8%AD%E5%BF%83/</loc>
+    <loc>https://blog.marice.top/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2025-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
