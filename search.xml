@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【魔改一手】二十四节气小卡片</title>
+    <url>/posts/epw3.html</url>
+    <content><![CDATA[
+侧边栏的变迁及二十四节气Hexo-Butterfly 的侧边栏可拓展性是很高的，在对应位置比如说_layout 文件夹中稍加改动，再在 pug 中引入，就可以对侧边栏增增减减啦，非常方便。
+在之前，我安装并配置了一些插件以在侧边栏放置类似时钟、天气、历史上的今天等模块，效果还是不错的。后来，不少插件因为缺失定期更新，接口没有及时更换，很多功能都无法正常显示，但这也不能怪作者对吧。
+在 2023 年年关，博主 Leonus 写了个放在侧边栏的小玩意：博客新年倒计时卡片，配置非常轻松，没一会我就用上了，过年的时候放在边上给背景雪白的小站带来一点温暖（bushi）
+但是，新年倒计时总不能一直放在那吧，开年看着总有一种很奇怪的感觉，比如说什么还有 365 天新年啊之类的。一开始，我就和 Leonus 一样，快过年了放上来，过完年了撤下去，欸嘿。后来想想，与其放在那吃灰，不如改一改适配全年就是了嘛！
+放什么好呢？五一、国庆、站庆，不错，但是太少了，一年放小长假的日子就那么几个，不如放二十四节气吧！
+小时候，背过新华字典最后的《二十四节气歌》，
+
+春雨惊春清谷天，夏满芒夏暑相连。
+秋处露秋寒霜降，冬雪雪冬小大寒。
+
+全诗包括的二十四节气分别指：
+立春、春雨、惊蛰、春分、清明、谷雨、立夏、小满、芒种、夏至、小暑、大暑、立秋、处暑、白露、秋分、寒露、霜降、立冬、小雪、大雪、冬至、小寒、大寒
+我还记得，但是好像除了每天起床屏幕前的万年历，很少有人在讨论中国二十四节气了。
+我把我表弟抓过来，三问问倒，嘿嘿。
+我们好像更加倾向于关注能放假的 “节日”，而 “节气” 似乎就是农民伯伯们研究的东西了。
+
+天文历法基础节气以太阳在黄道上的位置为基准，将一年划分为 24 等份，每 15° 为一节气，始于立春，终于大寒。这种划分方式源于上古时期对圭表测影、北斗指向及星象变化的观测，形成于秦汉时期，成熟于《淮南子》与《太初历》，并沿用至今。
+气候与物候规律节气精准反映四季更替与气候变化，如 “清明断雪，谷雨断霜” 总结了春季物候；“小暑大暑，上蒸下煮” 描述了盛夏湿热；“霜降见霜，米谷满仓” 则预示秋收。每个节气对应 “三候”，如惊蛰三候 “桃始华、仓庚鸣、鹰化为鸠”，以生物活动印证自然节律。
+
+这是节气体系的核心内涵，更是生态文明的当代启示
+不能忘，也不敢忘。
+今天是 2025 年 5 月 5 日，距离最近的节气是小满。
+
+小满，是夏季的第二个节气。小满，斗指甲，太阳达黄经 60°，于每年公历 5 月 20—22 日交节。小满节气意味着进入了大幅降水的雨季，雨水开始增多，往往会出现持续大范围的强降水。小满和雨水、谷雨、小雪、大雪等一样，都是直接反映降水的节气。小满反映了降雨量大的气候特征：“小满小满，江河渐满”。另有解释是指北方麦类等夏熟作物的籽粒开始灌浆，只是小满，还未完全饱满。
+
+在 Leonus 代码基础上，为了适配我新增的需求，我将做以下优化和改动：
+
+自动匹配最近的目标日期，并自动显示对应日期所对应的图片和文字
+如果最近日期无果，在那一日显示默认图片和日期（站庆容错）
+目标日期和图片可以自定义更改，且不需要指定年份，只需要月份和日子
+
+实践添加侧边栏前往路径 [Blogroot]\source_data\widget.yml
+# top: 创建的 widget 会出现在非 sticky 区域（即所有页面都会显示)# bottom: 创建的 widget 会出现在 sticky 区域（除了文章页都会显示)top:  - class_name:    id_name: newYear    name:    icon:    order: 1    html: '      &lt;div class="newYear-slider"&gt;          &lt;div class="swiper-wrapper"&gt;            &lt;div class="swiper-slide" style="background-image:url(/img/default.jpg)"&gt;&lt;/div&gt;            &lt;div class="swiper-slide" style="background-image:url(/img/default.jpg)"&gt;&lt;/div&gt;          &lt;/div&gt;      &lt;/div&gt;      &lt;div id="newYear-main"&gt;        &lt;div class="mask"&gt;&lt;/div&gt;        &lt;p class="title"&gt;&lt;/p&gt;        &lt;div class="newYear-time"&gt;&lt;/div&gt;        &lt;p class="today" style="text-align: right;"&gt;&lt;/p&gt;      &lt;/div&gt;    '
+
+添加 CSS自定义 css 中添加如下代码：
+建议前往路径 [Blogroot]\source\css\24solarterm.css
+/* 侧边栏节气卡片 */#newYear {  color: white;  padding: 0 !important;}#newYear p,#newYear h3 {  font-weight: normal;  color: inherit;  margin: 0;}#newYear .item-headline {  display: none;}.newYear-slider {  position: absolute;  width: 100%;  left: 0;  top: 0;}.newYear-slider .swiper-slide {  min-height: 160px;  background-position: center;  background-size: cover;}#newYear-main {  width: 100%;  pointer-events: none;  padding: 1rem;  position: relative;  left: 0;  top: 0;  z-index: 1;}#newYear-main * {  position: relative;  line-height: 1.3;}#newYear-main .time,#newYear-main .happyNewYear {  font-size: 3rem;  margin: 8px 0;  display: block;}#newYear-main .newYear-time {  font-weight: bold;  text-align: center;}#newYear-main .day {  font-size: 4rem;  letter-spacing: 6px;  margin-right: -6px;}#newYear-main .unit {  font-size: 1rem;}#newYear-main .mask {  position: absolute;  left: 0;  top: 0;  height: 100%;  width: 100%;  background-color: rgba(0, 0, 0, .2);}[data-theme=dark] #newYear-main .mask {  background-color: rgba(0, 0, 0, .3);}
+
+创建并引入 24solarterm.js在_config.butterfly.yml 的 inject 下引入文件：
+inject:  head:    # swiper    - &lt;link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.css"&gt;  bottom:    # swiper    - &lt;script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.js"&gt;&lt;/script&gt;    - &lt;script src="/js/24solarterm.js"&gt;&lt;/script&gt;
+
+建议前往路径 [Blogroot]\source\js\24solarterm.js 下添加文件
+图片请自行更改，我不保证长期可用
+function newYear() {  if (!document.querySelector('#newYear')) return;  // 特殊时间点的定义（月和日），以及对应的图片  const specialDates = [      { month: 2, day: 4, title: "立春", image: "https://wmimg.com/i/1452/2025/04/67f0ca55c250a.webp" },      { month: 2, day: 19, title: "雨水", image: "https://wmimg.com/i/1452/2025/04/67f0ca7917f9d.webp" },      { month: 3, day: 5, title: "惊蛰", image: "https://wmimg.com/i/1452/2025/04/67f0ca83b7966.webp" },      { month: 3, day: 20, title: "春分", image: "https://wmimg.com/i/1452/2025/04/67f0ca904f4b6.webp" },      { month: 4, day: 4, title: "清明", image: "https://wmimg.com/i/1452/2025/04/67f0caa2cd872.webp" },      { month: 4, day: 20, title: "谷雨", image: "https://wmimg.com/i/1452/2025/04/67f0d032b6181.webp" },      { month: 5, day: 5, title: "立夏", image: "https://wmimg.com/i/1452/2025/04/67f0d05562fef.webp" },      { month: 5, day: 21, title: "小满", image: "https://wmimg.com/i/1452/2025/04/67f0d067a9a7e.webp" },      { month: 6, day: 5, title: "芒种", image: "https://wmimg.com/i/1452/2025/04/67f0d0764f333.webp" },      { month: 6, day: 21, title: "夏至", image: "https://wmimg.com/i/1452/2025/04/67f0d0833d54f.webp" },      { month: 7, day: 7, title: "小暑", image: "https://wmimg.com/i/1452/2025/04/67f0d0c61edc7.webp" },      { month: 7, day: 23, title: "大暑", image: "https://wmimg.com/i/1452/2025/04/67f0d0e3e1710.webp" },      { month: 8, day: 7, title: "立秋", image: "https://wmimg.com/i/1452/2025/04/67f0d0ed8ecf5.webp" },      { month: 8, day: 23, title: "处暑", image: "https://wmimg.com/i/1452/2025/04/67f0d0f9e0bb3.webp" },      { month: 9, day: 7, title: "白露", image: "https://wmimg.com/i/1452/2025/04/67f0d104d716a.webp" },      { month: 9, day: 23, title: "秋分", image: "https://wmimg.com/i/1452/2025/04/67f0d10f609df.webp" },      { month: 10, day: 8, title: "寒露", image: "https://wmimg.com/i/1452/2025/04/67f0d11c22029.webp" },      { month: 10, day: 23, title: "霜降", image: "https://wmimg.com/i/1452/2025/04/67f0d129dd195.webp" },      { month: 11, day: 7, title: "立冬", image: "https://wmimg.com/i/1452/2025/04/67f0d13603562.webp" },      { month: 11, day: 22, title: "小雪", image: "https://wmimg.com/i/1452/2025/04/67f0d14465376.webp" },      { month: 12, day: 7, title: "大雪", image: "https://wmimg.com/i/1452/2025/04/67f0d14d8f04b.webp" },      { month: 12, day: 21, title: "冬至", image: "https://wmimg.com/i/1452/2025/04/67f0d15a7644f.webp" },      { month: 1, day: 5, title: "小寒", image: "https://wmimg.com/i/1452/2025/04/67f0d1647ee35.webp" },      { month: 1, day: 20, title: "大寒", image: "https://wmimg.com/i/1452/2025/04/67f0d16e52efc.webp" },      // 可以继续添加更多特殊时间点  ];  // 建站日期（年月日）  const siteStartDate = new Date('2022-10-29'); // 示例建站日期  const siteStartDateTimestamp = siteStartDate.getTime() / 1000;  // 星期对象  const week = { 0: '周日', 1: '周一', 2: '周二', 3: '周三', 4: '周四', 5: '周五', 6: '周六' };  function nol(h) {      h = Number(h);      return h &gt; 9 ? h : '0' + h;  }  function time() {      const now = new Date();      const nowTimestamp = Math.round(now.getTime() / 1000);      const today = `${now.getMonth() + 1}-${now.getDate()}`;      // 右下角今天      document.querySelector('#newYear .today').innerHTML = `${now.getFullYear()}-${nol(now.getMonth() + 1)}-${nol(now.getDate())} ${week[now.getDay()]}`;      // 查找最近的特殊时间点      let closestDate = null;      let closestSecond = Infinity;      for (const specialDate of specialDates) {          const specialDateThisYear = new Date(now.getFullYear(), specialDate.month - 1, specialDate.day);          const specialDateNextYear = new Date(now.getFullYear() + 1, specialDate.month - 1, specialDate.day);          let specialDateTimestamp;          if (specialDateThisYear &gt; now) {              specialDateTimestamp = specialDateThisYear.getTime() / 1000;          } else {              specialDateTimestamp = specialDateNextYear.getTime() / 1000;          }          const second = specialDateTimestamp - nowTimestamp;          if (second &lt; 0) continue; // 如果已经过了这个特殊时间点，则跳过          if (second &lt; closestSecond) {              closestSecond = second;              closestDate = specialDate;          }      }      if (closestDate) {          // 如果有接近的特殊时间点          document.querySelector('#newYear .title').innerHTML = `距离${closestDate.title}：`;          if (closestSecond &gt; 86400) {              // 大于一天则直接渲染天数              document.querySelector('#newYear .newYear-time').innerHTML = `&lt;span class="day"&gt;${Math.ceil(closestSecond / 86400)}&lt;/span&gt;&lt;span class="unit"&gt;天&lt;/span&gt;`;          } else {              // 小于一天则使用时分秒计时              let h = nol(parseInt(closestSecond / 3600));              closestSecond %= 3600;              let m = nol(parseInt(closestSecond / 60));              closestSecond %= 60;              let s = nol(closestSecond);              document.querySelector('#newYear .newYear-time').innerHTML = `&lt;span class="time"&gt;${h}:${m}:${s}&lt;/span&gt;`;          }          // 切换图片          document.querySelector('.newYear-slider').style.backgroundImage = `url(${closestDate.image})`;      } else {          // 如果没有接近的特殊时间点，则显示建站日期          document.querySelector('#newYear .title').innerHTML = `距离建站${now.getFullYear() - siteStartDate.getFullYear()}周年：`;          const second = nowTimestamp - siteStartDateTimestamp;          const days = Math.floor(second / 86400);          document.querySelector('#newYear .newYear-time').innerHTML = `&lt;span class="day"&gt;${days}&lt;/span&gt;&lt;span class="unit"&gt;天&lt;/span&gt;`;          // 切换到默认图片          document.querySelector('.newYear-slider').style.backgroundImage = `url(url_to_default_image.jpg)`;      }      // 如果没有定时器，则设置定时器      if (!window.newYearTimer) {          window.newYearTimer = setInterval(time, 1000);      }  }  time();}function newYearSwiper() {  var swiper = new Swiper('.newYear-slider', {      passiveListeners: true,      loop: true,      autoplay: {          disableOnInteraction: true,          delay: 5000      },      effect: 'fade',      mousewheel: true,      autoHeight: true  });  container.onmouseenter = () =&gt; { swiper.autoplay.stop(); };  container.onmouseleave = () =&gt; { swiper.autoplay.start(); };}// 适配了pjaxfunction whenDOMReady() {  newYear();  newYearSwiper();}whenDOMReady(); // 打开网站先执行一次document.addEventListener("pjax:complete", whenDOMReady); // pjax加载完成（切换页面）后再执行一次
+
+好了，有问题欢迎留言，再次感谢 Leonus。
+]]></content>
+      <categories>
+        <category>我的项目</category>
+      </categories>
+      <tags>
+        <tag>开发</tag>
+        <tag>必看</tag>
+        <tag>理性思辨</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【站庆】冰火之砺诞生一坤年了！</title>
     <url>/posts/epw2.html</url>
     <content><![CDATA[
