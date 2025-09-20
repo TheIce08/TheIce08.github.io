@@ -3,11 +3,11 @@ https://blog.marice.top/%E7%95%99%E8%A8%80/404.html
 https://blog.marice.top/tags/index.html
 https://blog.marice.top/wordScenery/index.html
 https://blog.marice.top/%E5%AF%BC%E8%88%AA/index.html
-https://blog.marice.top/privacy/index.html
 https://blog.marice.top/manifest.json
 https://blog.marice.top/json/music.json
 https://blog.marice.top/music/index.html
 https://blog.marice.top/object/index.html
+https://blog.marice.top/privacy/index.html
 https://blog.marice.top/fonts/reporter.json
 https://blog.marice.top/gbdoc/index.html
 https://blog.marice.top/gbmusic/index.html
